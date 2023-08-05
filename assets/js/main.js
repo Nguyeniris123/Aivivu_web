@@ -14,9 +14,9 @@ function closeNav (obj) {
 
 const slider = document.getElementById('slider');
 const images = [
-    '/assets/img/slider1.jpg',
-    '/assets/img/slider2.jpg',
-    '/assets/img/slider3.jpg'
+    './assets/img/slider1.jpg',
+    './assets/img/slider2.jpg',
+    './assets/img/slider3.jpg'
 ]; // Thêm đường dẫn các hình ảnh
 
 let currentImageIndex = 0;
