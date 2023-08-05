@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aivivu - Đặt vé máy bay online giá rẻ</title>
+    <link rel="icon" href="/assets/img/logo-icon.png">
+    <link rel="stylesheet" href="/assets/css/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="/assets/css/requestcathay.css">
+    <script src="/assets/js/main.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="header" class="flexbox">
+            <!-- Nút mở nav mobile -->
+            <div class="nav-bar">
+                <i class="fa-solid fa-bars" onclick="navMobile(this)"></i>
+            </div>
+            <!-- Lớp phủ đen khi mở nav mobile -->
+            <div class="nav-overlay" id="overlay" onclick="closeNav(this)"></div>
+
+            <div class="nav-mobile" id="mobile">
+                <!-- Nút mở nav mobile -->
+                <div class="nav-close">
+                    <i class="fa-regular fa-circle-xmark" onclick="closeNav(this)"></i>
+                </div>
+                <!-- nav menu trên mobile -->
+                <ul class="nav-list">
+                    <li class=""><a class="nav-mobile-link" href="/html/index.html">Home</a></li>
+                    <li class=""><a class="nav-mobile-link" href="">Khuyến mãi</a></li>
+                    <li class=""><a class="nav-mobile-link" href="">Vé máy bay</a></li>
+                    <li class=""><a class="nav-mobile-link" href="">Tour</a></li>
+                    <li class=""><a class="nav-mobile-link" href="">Combo</a></li>
+                    <li class=""><a class="nav-mobile-link" href="">Góc du lịch</a></li>
+                    <li class=""><a class="nav-mobile-link" href="">Tuyển dụng</a></li>
+                </ul>
+            </div>
+
+            <div class="header-logo">
+                <a href=""><img src="/assets/img/logo.png" alt="Logo"></a>
+            </div>
+
+            <!-- nav menu trên PC -->
+            <ul class="nav flexbox"> <!-- class flexbox dùng để đặt nhanh vào những vị trí cần flex -->
+                <li class=""><a href="/html/index.html">Home</a></li>
+                <li class=""><a href="">Khuyến mãi</a></li>
+                <li class=""><a href="">Vé máy bay</a></li>
+                <li class=""><a href="">Tour</a></li>
+                <li class=""><a href="">Combo</a></li>
+                <li class=""><a href="">Góc du lịch</a></li>
+                <li class=""><a href="">Tuyển dụng</a></li>
+            </ul>
+
+            <div class="header-number" title="Hotline"><a href="">&#128242 1900 6696</a></div>
+        </div>
+
+        <div id="content" class="margintop">
+            <div class="grid wide">
+                <div class="col request-box">
+                    <h1>Yêu cầu bảo hiểm</h1>
+                    <form class="box">
+                        <h2>Người yêu cầu</h2>
+                        <label for="booking-code">Mã booking: </label>
+                        <input type="text" id="booking-code"> <br>
+                        <input type="button" value="Tìm" class="send" onclick="send()">
+                        <div id="kq"></div>
+                    </form>
+                </div>
+            </div>
+        </div>     
+    </div>
+</body>
+</html>

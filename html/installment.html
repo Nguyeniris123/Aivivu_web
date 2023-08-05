@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aivivu - Đặt vé máy bay online giá rẻ</title>
+    <link rel="icon" href="/assets/img/logo-icon.png">
+    <link rel="stylesheet" href="/assets/css/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="/assets/css/installment.css">
+    <script src="/assets/js/main.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="backTop"><i class="fa-solid fa-circle-up"></i></div>
+        <div id="header" class="flexbox">
+            <!-- Nút mở nav mobile -->
+            <div class="nav-bar">
+                <i class="fa-solid fa-bars" onclick="navMobile(this)"></i>
+            </div>
+            <!-- Lớp phủ đen khi mở nav mobile -->
+            <div class="nav-overlay" id="overlay" onclick="closeNav(this)"></div>
+
+            <div class="nav-mobile" id="mobile">
+                <!-- Nút mở nav mobile -->
+                <div class="nav-close">
+                    <i class="fa-regular fa-circle-xmark" onclick="closeNav(this)"></i>
+                </div>
+                <!-- nav menu trên mobile -->
+                <ul class="nav-list">
+                    <li class=""><a class="nav-mobile-link" href="/html/index.html">Home</a></li>
+                    <li class=""><a class="nav-mobile-link" href="">Khuyến mãi</a></li>
+                    <li class=""><a class="nav-mobile-link" href="">Vé máy bay</a></li>
+                    <li class=""><a class="nav-mobile-link" href="">Tour</a></li>
+                    <li class=""><a class="nav-mobile-link" href="">Combo</a></li>
+                    <li class=""><a class="nav-mobile-link" href="">Góc du lịch</a></li>
+                    <li class=""><a class="nav-mobile-link" href="">Tuyển dụng</a></li>
+                </ul>
+            </div>
+
+            <div class="header-logo">
+                <a href=""><img src="/assets/img/logo.png" alt="Logo"></a>
+            </div>
+
+            <!-- nav menu trên PC -->
+            <ul class="nav flexbox"> <!-- class flexbox dùng để đặt nhanh vào những vị trí cần flex -->
+                <li class=""><a href="/html/index.html">Home</a></li>
+                <li class=""><a href="">Khuyến mãi</a></li>
+                <li class=""><a href="">Vé máy bay</a></li>
+                <li class=""><a href="">Tour</a></li>
+                <li class=""><a href="">Combo</a></li>
+                <li class=""><a href="">Góc du lịch</a></li>
+                <li class=""><a href="">Tuyển dụng</a></li>
+            </ul>
+
+            <div class="header-number" title="Hotline"><a href="">&#128242 1900 6696</a></div>
+        </div>
+
+        <div id="content" class="margintop">
+            <div class="grid wide">
+                <div class="installment row">
+                    <div class="col">
+                        <h3 class="margintop">CHƯƠNG TRÌNH TRẢ GÓP QUA THẺ TÍN DỤNG CÁ NHÂN (Credit Card)</h3>
+                        <p>Thẻ tín dụng hợp lệ là thẻ có logo Visa/Master/JCB và không có chữ Debit/Repaid/ATM/MST/Tên công ty</p>
+                        <h3 class="margintop">I. QUY ĐỊNH CHUNG</h3>
+                        <ol>
+                            <li>Giao dịch trả góp chỉ áp dụng dành cho chủ thẻ tín dụng được phát hành bởi các Ngân hàng có hỗ trợ trả góp tại AIVIVU.com;</li>
+                            <li>Giá trị thanh toán thẻ từ 3.000.000 VNĐ trở lên sau khi đã trừ các giảm giá (nếu có);</li>
+                            <li>Thời gian trả góp: dựa theo ngân hàng phát hành thẻ;</li>
+                            <li>Không giới hạn số lần đăng ký trả góp;</li>
+                            <li>Chủ thẻ không được thay đổi hoặc huỷ giao dịch trả góp sau khi giao dịch đã chuyển sang trả góp;</li>
+                            <li>Không áp dụng cho Thẻ phụ, Thẻ doanh nghiệp;</li>
+                            <li>Số tiền giao dịch sẽ được chia thành những khoản trả góp đều nhau dựa theo kì hạn trả góp đã chọn, được liệt kê cùng với các giao dịch bằng thẻ vào bảng sao kê hàng tháng. Khách hàng sẽ thanh toán các khoản này theo phương thức và thời hạn thanh toán thông thường của thẻ tín dụng. Khoản tiền phải trả góp sẽ được hiển thị trên bảng sao kê hàng tháng.</li>
+                        </ol>
+                        <h3 class="margintop">Danh sách các ngân hàng hỗ trợ phương thức thanh toán trả góp qua thẻ tín dụng tại AIVIVU.com:</h3>
+                        <img src="/assets/img/installment/visa_sp.png" alt="">
+                        <h3 class="margintop">II.  CÁCH THỨC CHUYỂN ĐỔI TRẢ GÓP</h3>
+                        <p>Chủ thẻ không cần liên hệ đến Ngân hàng để chuyển đổi giao dịch, chỉ cần thanh toán thành công trên AiVIVU.com & có chọn phương thức Trả góp.</p>
+                        <h3 class="margintop">III. CÁC TRƯỜNG HỢP KHÔNG ĐƯỢC ĐĂNG KÝ DỊCH VỤ TRẢ GÓP</h3>
+                        <ol>
+                            <li>Tài khoản thẻ tín dụng của Chủ thẻ đang trong tình trạng chậm thanh toán;</li>
+                            <li>Hiệu lực còn lại của Thẻ tín dụng ít hơn thời hạn đăng ký trả góp;</li>
+                            <li>Chủ thẻ vi phạm các Điều khoản & Điều kiện phát hành và sử dụng thẻ tín dụng quốc tế của ngân hàng phát hành;</li>
+                            <li>Giá trị giao dịch đăng ký trả góp nhỏ hơn số tiền tối thiểu/giao dịch theo quy định của từng ngân hàng có hỗ trợ trả góp;</li>
+                            <li>Giao dịch trả góp đã lên sao kê.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="margintop">
+                    <div class="row aivivu">
+                        <div class="col c-6 m-6 l-4 sub-aivivu">
+                            <p>Về Aivivu.com</p>
+                            <a href="/html/aivivu.html">Chúng tôi</a>
+                            <a href="/assets/file/DieuKhoanAivivu.pdf" target="_blank">Điều kiện & Điều khoản</a>
+                            <a href="/html/question.html">Câu hỏi thường gặp</a>
+                        </div> 
+
+                        <div class="col c-6 m-6 l-4 sub-aivivu">
+                            <p>Thông tin cần biết</p>
+                            <a href="/html/cathay.html">Quy chế bảo hiểm Cathay</a>
+                            <a href="/html/requestcathay.html">Yêu cầu bồi thường Cathay</a>
+                            <a href="/html/installment.html">Yêu cầu bảo hiểm</a>
+                        </div>  
+
+                        <div class="col l-4 m-12 c-12 sub-aivivu download">
+                            <p>Đặt phòng dễ dàng hơn qua ứng dụng AIVIVU</p>
+                            <div class="flexbox app">
+                                <img src="/assets/img/Qr.jpg" alt="Qr code" class="Qr-code">
+                                <a target="_blank" href="https://apps.apple.com/vn/app/ivivu-com-k%E1%BB%B3-ngh%E1%BB%89-tuy%E1%BB%87t-v%E1%BB%9Di/id1464844301?l=vi"><img src="/assets/img/ggplay" alt="Google play"></a>
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=iVIVU.com&hl=vi-VN"><img src="/assets/img/appstore" alt="App store"></a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+
+        <div id="footer" class="margintop">
+            <div>
+                <p> <i class="ti-location-pin"></i> <b>HCM:</b> Lầu 2, Tòa nhà Anh Đăng, 215 Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, Tp. Hồ Chí Minh</p>
+                <p> <i class="ti-location-pin"></i> <b>HN:</b> P308, Tầng 3, tòa nhà The One, số 2 Chương Dương Độ, P.Chương Dương, Q.Hoàn Kiếm, Hà Nội</p>
+                <p> <i class="ti-location-pin"></i> <b>Cần Thơ:</b> Tầng 7 - Tòa nhà STS - 11B Đại Lộ Hòa Bình, P. Tân An, Q. Ninh Kiều, TP. Cần Thơ</p>
+                <p><b>Email:</b> Aivivi@gmail.com</p>
+            </div>
+
+            <div class="socials-list">
+                <a href="https://www.facebook.com/AivivuHoChiMinh" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/aivivu/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UC7_UHi9BBHFXJViCQEcplQg" target="_blank" title="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.pinterest.com/duonglien2461994/aivivucom-du-l%E1%BB%8Bch-ve-may-bay/" target="_blank" title="Pinterrest"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Faivivu2" target="_blank" title="twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://vn.linkedin.com/in/aivivubooking" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="copyright">
+                <p>&copy AIVIVU Copyright.All Rights Reserved - Công ty CP Aivivu. MST: 0107622236. Cấp tại Sở Kế Hoạch và đầu tư TP Hà Nội</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

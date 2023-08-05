@@ -1,0 +1,609 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.col {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col1 {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 30px;
+}
+
+.l-3 {
+    flex: 0 0 25%; /*flex-grow flex-shrink flex-basis (25% chiều rộng của phần tử cha)*/
+    max-width: 25%;
+}
+
+.l-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.l-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.flexbox {
+    display: flex;
+    list-style-type: none;
+}
+
+.margintop {
+    margin-top: 60px;
+}
+
+.marginbottom {
+    margin-bottom: 40px;
+    color: red;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    /* text-align: center; */
+}
+
+#header {
+    background-color: rgb(20, 20, 167);
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    white-space: nowrap; /*ngăn chữ bị xuống dòng khi phóng to*/
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+
+}
+
+.header-logo {
+    padding-right: 25px;
+    padding-left: 15px;
+}
+
+.nav a:hover {
+    opacity: 0.6;
+}
+
+.header-number a:hover {
+    color: yellow;
+}
+
+.nav a,
+.header-number a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 25px 15px 18px 15px;
+}
+
+.header-number a {
+    padding: 16px 15px 13px 15px;
+    background-color: red;
+    border-radius: 60%;
+}
+
+#slider {
+    background-image: url(/MidTemWebDesign/assets/img/slider1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 30%;
+    padding-bottom: 2%;
+    margin-top: 54px;
+    position: relative;
+}
+
+.btn-changeImg {
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    font-size: 30px;
+    opacity: 0.6;
+}
+
+.info {
+    padding: 10px;
+    background-color: #cfedf5;
+}
+
+.info-sub {
+    font-weight: bold;
+}
+
+.onefly {
+    margin-left: 5px;
+}
+
+.twofly {
+    margin-right: auto;
+    margin-left: 5px;
+}
+
+.info-place {
+    width: 100%;
+    height: 30px;
+    border-color: yellow;
+    text-align: center;
+    cursor: text;
+}
+
+.info-time {
+    width: 100%;
+    height: 30px;
+    border-color: yellow;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box {
+    padding: 5px 0 15px 0;
+}
+
+.search-airline {
+    font-weight: bold;
+    padding: 2px;
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+
+}
+
+.people {
+    width: 50px;
+}
+
+#content a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.question-head2 {
+    text-align: center;
+    color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.answer-head3 {
+    margin-bottom: 10px;
+}
+
+.answer {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.voucher-head2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.voucher-ticket img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.combo-head2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.combo-ticket {
+    background-color: #fff;
+}
+.combo-ticket img {
+    height: auto;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.combo-ticket-sub {
+    margin-top: 7px;
+    background-color: #e9dcb2
+}
+
+.combo-ticket-sub p {
+    padding: 5px 0;
+}
+
+.cheap-head2 {
+    text-align: center;
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cheap-ticket img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.voucher-ticket a:hover,
+.combo-ticket a:hover,
+.cheap-ticket a:hover {
+    color: yellow;
+}
+.work-head2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work img {
+    width: 100%;
+    height: auto;
+}
+
+.aivivu {
+    justify-content: space-around;
+}
+
+#content .sub-aivivu a:hover {
+    text-decoration: underline;
+}
+
+.sub-aivivu p {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 0;
+    font-size: large;
+}
+
+#content .sub-aivivu a {
+    text-align: left;
+    display: block;
+    padding: 5px 0;
+    color: #333;
+    opacity: 0.8;
+    font-size: small;
+}
+
+.app img {
+    width: 100%;
+}
+
+.Qr-code {
+    margin-right: 30px;
+}
+
+#footer {
+    text-align: center;
+    background-color: rgb(172, 177, 248);
+}
+
+#footer p {
+    padding: 10px 0;
+}
+
+#footer .socials-list {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#footer .socials-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .socials-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.copyright {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.nav-bar {
+    margin-bottom: 17px;
+    width: 28px;
+    height: 28px;
+    font-size: 2rem;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-bar:hover,
+.nav-close:hover {
+    opacity: 0.6;
+}
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.5s;
+}
+
+.nav-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform linear 0.2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.nav-list {
+    margin-left: 20px;
+    margin-top: 60px;
+    list-style-type: none;
+    text-align: left;
+}
+
+.nav-mobile-link {
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 8px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav-mobile-link:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.nav-close {
+    width: 28px;
+    height: 28px;
+    font-size: 1.5rem;
+    color: black;
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#backTop {
+    position: fixed;
+    font-size: 30px;
+    bottom: 2%;
+    right: 2%;
+    z-index: 99;
+}
+
+/* PC medium resolution > */
+@media (min-width: 1024px) {
+
+}
+
+/* mobile */
+@media (max-width: 740px) {
+    .row {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    
+    .col {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .col1 {
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 0;
+    }
+
+    .c-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .c-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #header {
+        justify-content: space-around;
+    }
+    #content {
+        text-align: center;
+        font-size: large;
+    }
+    .nav {
+        display: none;
+    }
+    
+    .nav-bar {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .people {
+        width: 40px;
+    }
+
+    .fix {
+        margin-bottom: 10px;
+    }
+
+    .answer {
+        margin-bottom: 30px;
+    }
+
+    .answer-head3 {
+        margin-bottom: 5px;
+    }
+
+    .voucher img,
+    .combo img, 
+    .cheap img {
+        margin-top: 30px;
+    }
+
+    .voucher-head2,
+    .cheap-head2 {
+        margin-bottom: -20px;
+    }
+
+    .combo-head2 {
+        margin-bottom: -5px;
+    }
+
+    #slider {
+        padding-bottom: 1%;
+    }
+
+    .btn-changeImg {
+        display: none;
+    }
+
+    .download {
+        margin-top: 60px;
+    }
+}
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) { 
+    .wide {
+        width: 644px;
+    }
+
+    .row {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .col {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .col1 {
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 0;
+    }
+
+    .m-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .m-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .m-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #header {
+        justify-content: space-around;
+    }
+
+    #content {
+        text-align: center;
+        font-size: large;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-bar {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .fix {
+        margin-bottom: 10px;
+    }
+
+    .answer {
+        margin-bottom: 30px;
+    }
+
+    .voucher img,
+    .combo img, 
+    .cheap img {
+        margin-top: 30px;
+    }
+
+    .voucher-head2,
+    .cheap-head2 {
+        margin-bottom: -20px;
+    }
+
+    .combo-head2 {
+        margin-bottom: -5px;
+    }
+
+    .btn-changeImg {
+        display: none;
+    }
+
+    .download {
+        margin-top: 60px;
+    }
+}
+
+/* > PC low resolution*/
+/* khi kéo về khoảng min max này sẽ bị khoảng trắng, nên cần chỉnh lại width */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .wide {
+        width: 980px;
+    }
+
+    .wide .row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+}
