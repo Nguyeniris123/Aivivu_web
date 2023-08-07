@@ -5,14 +5,14 @@ function load() {
         h+=`
         <div class="col l-4 m-6 c-12">
                 <div class="imgBox">
-                    <img src="${p.image}" alt=${p.alt}" title="${p.tittle}">
+                    <img src="${p.image}" alt="${p.alt}" title="${p.title}">
                     <div class="goodPrice">
                         Giá tốt: <span class="price">${p.price}</span>
                     </div>
                 </div>
 
                 <h3>
-                    <a href="${p.link}" title="${p.tittle}">${p.tittle}</a>
+                    <a href="${p.link}" title="${p.title}">${p.title}</a>
                 </h3>
 
                 <div>
@@ -35,8 +35,8 @@ function load() {
             </div>
     `;
 
-        let e = document.querySelectorAll("row");
-        e.innerHTML = +h;
+        let e = document.querySelector(".grid");
+        e.innerHTML = h;
     })
 }
 

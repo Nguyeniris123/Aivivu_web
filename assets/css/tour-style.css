@@ -8,6 +8,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    margin-left: calc(10vw + 12px);
+    margin-top: 100px;
+    text-align: left;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
 .wide {
     width: 80vw;
 }
@@ -30,7 +42,7 @@ body {
 
 .goodPrice {
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     left: 0;
     padding: 0 15px 0 15px;
     font-size: 13px;
@@ -86,3 +98,20 @@ body {
     font-weight: 400;
 }
 
+
+/* >= Tablet */
+@media (min-width: 740px) {
+    .grid {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+}
+
+
+/* PC medium resolution > */
+@media (min-width: 1113px) {
+    .grid {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+}
