@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wide {
+    width: 80vw;
+}
+
+
+
+.col {
+    margin-bottom: 20px;
+}
+
+.col img {
+    width: 100%;
+    border-radius: 5% 5% 0 0;
+}
+
+.imgBox {
+    height: auto;
+    position: relative;
+}
+
+.goodPrice {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 15px 0 15px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 30px;
+    background-color: #00BCD4;
+}
+
+.goodPrice::after {
+    left: calc(100% - 15px);
+    top: 50%;
+    border: solid #00BCD4;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+
+    border-color: #00BCD4;
+    border-right-color: transparent;
+    border-width: 15px;
+    margin-top: -15px;
+}
+
+
+.col  h3 a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.col:hover a {
+    color: rgb(28, 54, 217);
+}
+
+.col i {
+    color: rgb(0, 79, 148);
+    font-size: 18px;
+    padding: 0 5px 0 10px;
+}
+
+.col .fp {
+    font-size: 15px;
+    line-height: 26px;
+    color: #898989;
+}
+
+.col .lp {
+    font-size: 15px;
+    line-height: 26px;
+    color: #333;
+    font-weight: 400;
+}
+

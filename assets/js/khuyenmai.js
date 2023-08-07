@@ -23,24 +23,24 @@ function load() {
 window.onload =function() {
     load();
 
-    $("#backTop").hide();
-    $("#backTop").click(()=>{ 
-        $("html,body").animate({
-            scrollTop:0
-        },1000);
-    });
+    // $("#backTop").hide();
+    // $("#backTop").click(()=>{ 
+    //     $("html,body").animate({
+    //         scrollTop:0
+    //     },1000);
+    // });
 
     // $("#backTop").click(() => {
     //     $("html, body").animate({
     //         scrollTop: 0
     //     }, 1000, "easeInOutCubic");
     // });
-    $(window).scroll(function() {
-        if ($(this).scrollTop() >= ($(window).height() * 1)) {
-            $("#backTop").show("slow");
-        }
-        else {
-            $("#backTop").hide("slow");
-        }
-    });
+    // $(window).scroll(function() {
+    //     if ($(this).scrollTop() >= ($(window).height() * 1)) {
+    //         $("#backTop").show("slow");
+    //     }
+    //     else {
+    //         $("#backTop").hide("slow");
+    //     }
+    // });
 }
