@@ -112,7 +112,7 @@ html {
 }
 
 #slider {
-    background-image: url(./assets/img/slider1.jpg);
+    background-image: url(); /*Ko cần đưa link ảnh vì sẽ gây ra lỗi xung đột với main.js*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
