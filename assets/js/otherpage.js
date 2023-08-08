@@ -61,8 +61,14 @@ $(document).ready(function() {
         $('html').animate({scrollTop: 0}, 150);
     });
 
+    // nhấn vào số đt thì hiện thông báo
     $(".header-number").click(function() {
         event.preventDefault(); // ngăn chặn mở liên kết mặc định của a
         alert("Call this number 1900 6696")
+    });
+
+    //Nhấn vào mũi tên thì ẩn hiện câu trả lời - question.html
+    $(".fa-solid.fa-arrows-up-down").click(function() {
+        $(this).parent().next("p").slideToggle(200); //sử dụng .parent() để truy cập phần tử chứa biểu tượng mũi tên, sau đó sử dụng .next("p") để tìm phần tử <p>
     });
 });

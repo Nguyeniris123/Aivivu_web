@@ -111,12 +111,22 @@ h1 {
 h3 {
     margin-bottom: 10px;
     margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
-ol {
-    line-height: 1.5;
+.fa-solid.fa-arrows-up-down {
+    opacity: 0.8;
 }
 
+.main div {
+    border-bottom: 1px solid rgb(156, 83, 83);
+}
+
+.main p {
+    display: none;
+    padding-bottom: 10px;
+}
 
 .sub-aivivu p {
     margin: 0;
@@ -318,6 +328,10 @@ ol {
     .download {
         margin-top: 60px;
     }
+
+    h3 {
+        display: inline-block;
+    }
 }
 
 /* Tablet - PC low resolution */
@@ -370,6 +384,10 @@ ol {
 
     .download {
         margin-top: 60px;
+    }
+
+    h3 {
+        display: inline-block;
     }
 }
 
