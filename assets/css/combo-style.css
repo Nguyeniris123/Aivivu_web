@@ -10,30 +10,51 @@ body {
 
 /* Hieu ung */
 .image, i {
-      transition: transform 0.3s;
-    }
+    transition: transform 0.3s;
+  }
 
 .scaleImg {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 
 
 .iconAni {
-    transform: scaleX(-1);
-  }
+  transform: scaleX(-1);
+}
 
 /* --------------------------------------------- */
-h1 {
+
+.container {
+    width: 80vw;
+    margin-right: calc(10vw + 12px);
+    margin-left: calc(10vw + 12px);
+}
+
+.container .page-title {
+    color: #111;
+    text-align: left;
+    text-transform: uppercase;
+    
+    font-weight: 700;
     font-size: 23px;
     line-height: 38px;
-    text-transform: uppercase;
-    text-align: left;
 
-    padding-bottom: 18px;
-    margin-left: calc(10vw + 12px);
     margin-top: 100px;
+
 }
+
+.container .category-description {
+
+    font-style: italic;
+    font-family: 'Open Sans',arial,sans-serif;
+    color: #777;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 10px 0 5px 0;
+}
+
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -71,22 +92,55 @@ h1 {
     color: #fff;
     font-weight: 600;
     line-height: 30px;
-    background-color: #00BCD4;
+    background-color: rgb(20, 20, 167);
 }
 
 .goodPrice::after {
     left: calc(100% - 15px);
     top: 50%;
-    border: solid #00BCD4;
+    border: solid rgb(20, 20, 167);
     content: " ";
     height: 0;
     width: 0;
     position: absolute;
 
-    border-color: #00BCD4;
+    border-color: rgb(20, 20, 167);
     border-right-color: transparent;
     border-width: 15px;
     margin-top: -15px;
+}
+
+.imgBox .tour-price {
+    text-align: right;
+    position: absolute;
+    top: 8%;
+    right: 0;
+    background-color: rgba(160, 224, 251, 0.8);
+    width: 150px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+} 
+
+.imgBox .tour-price .text {
+    color: #454545;
+    width: 100%;
+    font-size: 11px;
+    line-height: 18px;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.imgBox .tour-price .tourprice {
+    font-family: Verdana,Geneva,sans-serif;
+    color: #a50000;
+    text-align: right;
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 0 10px;
+    margin: 0;
 }
 
 

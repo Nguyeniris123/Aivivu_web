@@ -3,7 +3,7 @@ function load() {
         let h="";
         for (let p of data)
         h+=`
-    <div class="content-section">
+    <div class="content-section col l-4 m-6 c-12">
         <img src="${p.img}" title="${p.title}">
         <h3>
             <a href="${p.link}">${p.title}</a>
