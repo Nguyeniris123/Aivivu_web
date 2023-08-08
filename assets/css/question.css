@@ -385,6 +385,10 @@ h3 {
     .download {
         margin-top: 60px;
     }
+
+    h3 {
+        display: inline-block;
+    }
 }
 
 /* > PC low resolution*/
