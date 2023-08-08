@@ -79,6 +79,7 @@ $(document).ready(function() {
         $('html').animate({scrollTop: 0}, 150);
     });
 
+    // nhấn vào số đt thì hiện thông báo
     $(".header-number").click(function() {
         event.preventDefault(); // ngăn chặn mở liên kết mặc định của a
         alert("Call this number 1900 6696")
