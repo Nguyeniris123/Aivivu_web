@@ -10,27 +10,147 @@
     <script src="./assets/js/order.js"></script>
 </head>
 <body>
-    <div class="container1">
+    <div id="container1">
+      <!-- Tiêu đề -->
         <h1><i class="fa-solid fa-plane"></i>   Đặt vé</h1>
+        <!-- Khung vé -->
         <form class="box1">
+          <!-- Khung radio option -->
+          <div class="labelBox">
             <label>
-                <input class="radiobtn" type="radio" name="flight-type" value="round-trip">
-                <span>Khứ hồi</span>
-              </label>
-              <label>
-                <input class="radiobtn" type="radio" name="flight-type" value="one-way">
-                <span>Một chiều</span>
-              </label>
-              <label>
-                <input class="radiobtn " type="radio" name="flight-type" value="multi-leg">
-                <span>Nhiều chặng</span> 
-              </label><br>
-              <i class="fa-solid fa-plane-departure"></i><br>
-              <input type="text" name="" id=""><br>
-              <i class="fa-solid fa-plane-arrival"></i><br>
-              <input type="text" name="" id=""><br>
+              <input class="radiobtn" type="radio" name="flight-type" value="round-trip">
+              <span>Khứ hồi</span>
+            </label>
+            <label>
+              <input class="radiobtn" type="radio" name="flight-type" value="one-way">
+              <span>Một chiều</span>
+            </label>
+            <label>
+              <input class="radiobtn " type="radio" name="flight-type" value="multi-leg">
+              <span>Nhiều chặng</span> 
+            </label><br>
+          </div>
+          <!-- Bảng 1  -->
+          <table id="table1">
+            <tr>
+              <td colspan="2">
+                <i class="fa-solid fa-plane-departure"></i> Điểm khởi hành / From
+              </td>
+              <td colspan="2">
+                <i class="fa-solid fa-plane-arrival"></i> Điểm đến / To<br>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="text" name="" id="departure" placeholder="">
+              </td>
+              <td colspan="2">
+                <input type="text" name="" id="destination" placeholder=""><br>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <i class="fa-regular fa-calendar-days"></i> Ngày đi / Departing
+              </td>
+              <td>
+                <i class="fa-regular fa-calendar-days"></i> Ngày về / Returning<br>
+              </td>
+              <td colspan="2">
+                <i class="fa-solid fa-grip-lines"></i> Hạng ghế / Travel class
+              </td>
+              
+            </tr>
+            <tr>
+              <td>
+                <input type="date" name="" id="departing" >
+              </td>
+              <td>
+                <input type="date" name="" id="returning" ><br>
+              </td>
+
+              <td colspan="2">
+                <select name="travelclass" id="travelclass">
+                  <option value="FirstClass">Hạng nhất (First Class)</option>
+                  <option value="BusinessClass">Hạng Thương gia (Business Class)</option>
+                  <option value="EconomyClass" selected>Hạng Phổ thông (Economy Class)</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          
+          <!-- Bảng 2 -->
+          <table id="table2">
+            <tr>
+              <th id="tableTitle" colspan="3">
+                Hành khách / Passengers
+              </th>
+              
+            </tr>
+            <tr>
+              <td>
+                Người lớn / Adult(s)
+              </td>
+              <td>
+                Trẻ em / Child(ren) <br>
+                <span class="note">2 to under 12 years old</span>
+              </td>
+              <td>
+                Em bé / Infant(s) <br>
+                <span class="note">under 2 years old</span>
+              </td>
+            </tr>
+            <tr id="lastrow">
+              <td>
+                <div class="sub">-</div>
+                <input type="number" name="adultNum" id="adultNum" min="0" max="50" step="1" value="0">
+                <div class="add">+</div>
+              </td>
+              <td>
+                <div class="sub">-</div>
+                <input type="number" name="childNum" id="childNum" min="0" max="50" step="1" value="0">
+                <div class="add">+</div>
+              </td>
+              <td>
+                <div class="sub">-</div>
+                <input type="number" name="infNum" id="infNum" min="0" max="50" step="1" value="0">
+                <div class="add">+</div>
+              </td>
+            </tr>
+          </table>
+
+
+
+          <input type="submit" value="Submit" id="submitBtn1" style="display: none;" onclick="validateForm(event)"> <!-- Ẩn nút submit -->
+          <label for="submit1">
+            <a href="javascript:;" id="nextBtn"><i class="fa-solid fa-angles-right"></i></a>
+          </label>
         </form>
     </div>
+
+
+
+    <div id="container2">
+      <h1><i class="fa-solid fa-user"></i>   Thông tin</h1>
+      <form class="box2">
+          <label>
+              <input class="radiobtn" type="radio" name="flight-type" value="round-trip">
+              <span>Khứ hồi</span>
+            </label>
+            <label>
+              <input class="radiobtn" type="radio" name="flight-type" value="one-way">
+              <span>Một chiều</span>
+            </label>
+            <label>
+              <input class="radiobtn " type="radio" name="flight-type" value="multi-leg">
+              <span>Nhiều chặng</span> 
+            </label><br>
+            <i class="fa-solid fa-plane-departure"></i><br>
+            <input type="text" name="" id=""><br>
+            <i class="fa-solid fa-plane-arrival"></i><br>
+            <input type="text" name="" id=""><br>
+      </form>
+  </div>
     
     
 </body>

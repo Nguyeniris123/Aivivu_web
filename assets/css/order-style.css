@@ -5,7 +5,7 @@
 }
 
 .checkedButton {
-    color: rgba(0, 163, 250);
+    color: rgb(0, 163, 250);
     font-style: italic;
     text-decoration: underline;
 }
@@ -32,18 +32,119 @@ h1 {
     
 }
 
-.box1 {
+.box1, .box2 {
     width: 80vw;
     height: 70vh;
     background-color: rgba(0,0,0,0.6);
     border-radius: 3px;
     margin: 0 10vw 10vh 10vw;
-    padding: 12px;
+    padding: 24px;
+    position: relative;
 }
 
 label  {
     margin: 0 5vw 0 0;
 }
+
+.labelBox {
+    margin-bottom: 12px;
+}
+
+.box1 #table1 {
+    width: 100%;
+}
+.box1 #table1 input,select {
+    margin-bottom: 12px;
+}
+
+.box1 #table1 input[type=text] {
+    width: 25vw;
+    line-height: 2;
+    padding-left: 5px;
+    padding-right: 5px;  
+}
+
+.box1 #table1 input[type=date] {
+    width: calc(100% - 12px);
+    line-height: 2;
+}
+
+.box1 #table1 #travelclass {
+    height: 32px;
+
+}
+
+
+.box1 #table2 {
+    width: 70%;
+    text-align: left;
+    line-height: 1;
+    
+}
+
+.box1 #table2 .note {
+    font-size: 11px;
+    color: rgba(256,256,256,0.8); 
+}
+
+.box1 #table2 .note:hover {
+    cursor: help;
+}
+
+.box1 #table2 th{
+    font-size: 20px;
+    line-height: 3;
+}
+
+
+#table2 td {
+    /* border: 1px solid red; */
+    padding: 4px;
+    vertical-align: top;
+}
+
+#table2 input[type=number] {
+    height: 34px;
+    text-align: center;
+    border: none;
+}
+
+#table2 .sub,.add {
+    height: 34px;
+    width: 34px;
+    line-height: 34px;
+    background-color: rgb(0, 163, 250);
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#table2 .sub,.add:hover {
+    cursor: pointer;
+}
+
+#table2 .sub {
+    transform: translate(0, -1px);
+}
+
+#table2 .add {
+    transform: translate(0, -1px);
+}
+
+#nextBtn {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    background-color: rgb(0, 163, 250);
+    width: 60px;
+
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+
+
 
 
 
