@@ -126,12 +126,32 @@ html {
     position: relative;
 }
 
-.btn-changeImg {
+.btn-changeImg-right {
     position: absolute;
     right: 1%;
     top: 50%;
     font-size: 30px;
     opacity: 0.6;
+    color: #fff;
+    text-shadow:
+        -1px -1px 0 #333,  
+        1px -1px 0 #333,
+        -1px 1px 0 #333,
+        1px 1px 0 #333; /* Viền nâu xung quanh chữ */
+}
+
+.btn-changeImg-left {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    font-size: 30px;
+    opacity: 0.6;
+    color: #fff;
+    text-shadow:
+        -1px -1px 0 #333,  
+        1px -1px 0 #333,
+        -1px 1px 0 #333,
+        1px 1px 0 #333; /* Viền nâu xung quanh chữ */
 }
 
 .info {

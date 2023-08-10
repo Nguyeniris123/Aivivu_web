@@ -12,6 +12,7 @@ function closeNav (obj) {
     z.style.display = "none";
 };
 
+// Hàm chuyển đổi ảnh slider
 const slider = document.getElementById('slider');
 const images = [
     './assets/img/slider1.jpg',
@@ -21,14 +22,26 @@ const images = [
 
 let currentImageIndex = 0;
 
-function changeBackgroundImage(obj) {
+function changeBackgroundImageRight(obj) {
     slider.style.backgroundImage = `url('${images[currentImageIndex]}')`;
-    currentImageIndex = (currentImageIndex + 1) % images.length;
+    currentImageIndex++;
+    if (currentImageIndex >= images.length) {
+      currentImageIndex = 0;
+    }
+    // currentImageIndex = (currentImageIndex + 1) % images.length;
     // Nếu currentImageIndex là 2 và images.length là 3
     // currentImageIndex sẽ trở thành 0, chuyển hình ảnh cuối cùng về hình ảnh đầu tiên.
 }
+
+function changeBackgroundImageLeft(obj) {
+    slider.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+    currentImageIndex--;
+    if (currentImageIndex < 0) {
+      currentImageIndex = images.length - 1;
+    }
+}
 // Đặt thời gian để thay đổi hình ảnh sau mỗi 2 giây (1000ms = 1s)
-setInterval(changeBackgroundImage, 2000);
+setInterval(changeBackgroundImageRight, 2000);
 
 // request-box (requestcathay.html) begin
 function validate(ele) {
