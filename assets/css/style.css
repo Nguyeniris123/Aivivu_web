@@ -81,7 +81,11 @@ html {
     z-index: 1;
     white-space: nowrap; /*ngăn chữ bị xuống dòng khi phóng to*/
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
 
+.active {
+    background-color: darkred !important;
+    z-index: 2;
 }
 
 .header-logo {

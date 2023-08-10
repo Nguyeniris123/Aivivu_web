@@ -104,4 +104,9 @@ h1 {
     margin-top: 9px;
 }
 
+.active {
+    background-color: darkred !important;
+    z-index: 2;
+}
+
 /* --------------------------------------------- */

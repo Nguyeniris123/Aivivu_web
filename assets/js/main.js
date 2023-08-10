@@ -66,6 +66,7 @@ function send() {
 
 // JQUERY
 $(document).ready(function() {
+    // nút lướt lên đầu
     $(window).scroll(function() {
       if($(this).scrollTop()) {
           $("#backTop").fadeIn();
@@ -84,6 +85,12 @@ $(document).ready(function() {
         event.preventDefault(); // ngăn chặn mở liên kết mặc định của a
         alert("Call this number 1900 6696")
     });
+
+    // đang ở trang html nav nào thì đỏ lên
+    // Lấy đường dẫn của trang hiện tại
+    var currentPath = window.location.pathname.split("/").pop().split(".")[0];
+    // Thêm class "active" vào thẻ <a> tương ứng với trang hiện tại
+    $('.nav a[href="' + currentPath + '.html"]').addClass('active');
 });
 
 
