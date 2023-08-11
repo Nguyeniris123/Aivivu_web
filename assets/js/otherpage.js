@@ -73,4 +73,9 @@ $(document).ready(function() {
     var currentPath = window.location.pathname.split("/").pop().split(".")[0];
     // Thêm class "active" vào thẻ <a> tương ứng với trang hiện tại
     $('.nav a[href="' + currentPath + '.html"]').addClass('active');
+
+    //Nhấn vào mũi tên thì ẩn hiện câu trả lời - question.html
+    $(".fa-solid.fa-arrows-up-down").click(function() {
+        $(this).parent().next("p").slideToggle(200); //sử dụng .parent() để truy cập phần tử chứa biểu tượng mũi tên, sau đó sử dụng .next("p") để tìm phần tử <p>
+    });
 });
