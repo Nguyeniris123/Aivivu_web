@@ -131,7 +131,7 @@ html {
     right: 1%;
     top: 50%;
     font-size: 30px;
-    opacity: 0.6;
+    opacity: 0.3;
     color: #fff;
     text-shadow:
         -1px -1px 0 #333,  
@@ -145,7 +145,7 @@ html {
     left: 1%;
     top: 50%;
     font-size: 30px;
-    opacity: 0.6;
+    opacity: 0.3;
     color: #fff;
     text-shadow:
         -1px -1px 0 #333,  
@@ -521,10 +521,7 @@ html {
 
     #slider {
         padding-bottom: 1%;
-    }
-
-    .btn-changeImg {
-        display: none;
+        padding-top: 80%;
     }
 
     .download {
@@ -608,10 +605,6 @@ html {
 
     .combo-head2 {
         margin-bottom: -5px;
-    }
-
-    .btn-changeImg {
-        display: none;
     }
 
     .download {
