@@ -22,7 +22,7 @@ function loadCombos() {
             h+=`
             <div class="combo-ticket col l-3 m-12 c-12">
                 <a href=""><img src="./assets/img/${d.image}" alt=""></a>
-                <a href="">${d.name}"></a>
+                <a href="">${d.name}"</a>
                 <div class="combo-ticket-sub">
                     <p> <i class="fa-solid fa-location-dot"></i> ${d.p1}</p>
                     <p> <i class="fa-solid fa-signs-post"></i> ${d.p2}</p>
