@@ -57,52 +57,17 @@ function setupIncrementDecrement() {
   });
 }
 
+// function handleNextBtnClick(btn) {
+//   document.getElementById(btn).click();
+// }
 function handleNextBtnClick(btn) {
-  document.getElementById(btn).click();
+  btn.click();
 }
 
-// function handleSubmission() {
-//   var radios = document.getElementsByName('flight-type');
-//   var numInputs = document.getElementsByClassName('num');
-//   var isRadioSelected = false;
-//   var isNumInputValid = false;
-
-//   // Kiểm tra xem có ít nhất một radio được chọn
-//   for (var i = 0; i < radios.length; i++) {
-//     if (radios[i].checked) {
-//       isRadioSelected = true;
-//       break;
-//     }
-//   }
-
-//   // Kiểm tra xem có ít nhất một số khác 0 trong các input có class "num"
-//   for (var i = 0; i < numInputs.length; i++) {
-//     if (parseInt(numInputs[i].value) !== 0) {
-//       isNumInputValid = true;
-//       break;
-//     }
-//   }
-
-//   // Hiển thị thông báo nếu không thỏa mãn các điều kiện
-//   if (!isRadioSelected) {
-//     alert('Vui lòng chọn ít nhất một loại vé.');
-//   }
-//   if (!isNumInputValid) {
-//     alert('Vui lòng nhập số lượng vé.');
-//   }
-
-//   // // Tiếp tục xử lý khi tất cả các điều kiện đều thỏa mãn
-//   // if (isRadioSelected && isNumInputValid) {
-//   //   // Thực hiện các hành động khác ở đây sau khi submit thành công
-//   //   // ...
-//   // }
-// }
 
 function handleSubmission() {
   var radios = document.getElementsByName('flight-type');
-  var numInputs = document.getElementsByClassName('num');
   var isRadioSelected = false;
-  var isNumInputValid = false;
 
   // Kiểm tra xem có ít nhất một radio được chọn
   for (var i = 0; i < radios.length; i++) {
@@ -112,60 +77,91 @@ function handleSubmission() {
     }
   }
 
-  // Kiểm tra xem có ít nhất một số khác 0 trong các input có class "num"
-  for (var i = 0; i < numInputs.length; i++) {
-    if (parseInt(numInputs[i].value) !== 0) {
-      isNumInputValid = true;
-      break;
+  // Kiểm tra tất cả các mục yêu cầu
+  var departure = document.getElementById('departure').value;
+  var destination = document.getElementById('destination').value;
+  var departing = document.getElementById('departing').value;
+  var returning = document.getElementById('returning').value;
+
+  var isRequiredFieldsFilled = departure && destination && departing && returning;
+
+  // Hiển thị thông báo nếu không có radio nào được chọn hoặc các mục yêu cầu chưa được điền đúng
+  if (!isRadioSelected) {
+    Swal.fire({
+      text: 'Vui lòng chọn ít nhất một loại vé.',
+      icon: 'warning',
+      confirmButtonText: 'OK',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    });
+  } else {
+    if (departure==="") {
+      Swal.fire({
+        text: 'Vui lòng chọn điểm khởi hành.',
+        icon: 'warning',
+        confirmButtonText: 'OK',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      });
+    } else {
+      if (destination==="") {
+        Swal.fire({
+          text: 'Vui lòng chọn điểm đến.',
+          icon: 'warning',
+          confirmButtonText: 'OK',
+          showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+          }
+        });
+      } else {
+        if (departing==="") {
+          Swal.fire({
+            text: 'Vui lòng chọn ngày đi.',
+            icon: 'warning',
+            confirmButtonText: 'OK',
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          });
+        } else {
+          if (returning==="") {
+            Swal.fire({
+              text: 'Vui lòng chọn ngày về.',
+              icon: 'warning',
+              confirmButtonText: 'OK',
+              showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+              },
+              hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+              }
+            });
+          } else {
+            if (isRequiredFieldsFilled) {
+              // Gọi hàm animateContainers1()
+              animateContainers1();
+            }
+          }
+        }
+      }
     }
   }
-
-// Hiển thị thông báo nếu không thỏa mãn các điều kiện
-if (!isRadioSelected && !isNumInputValid) {
-  Swal.fire({
-    text: 'Vui lòng chọn ít nhất một loại vé và nhập số lượng vé.',
-    icon: 'warning',
-    confirmButtonText: 'OK',
-    showClass: {
-      popup: 'animate__animated animate__fadeInDown'
-    },
-    hideClass: {
-      popup: 'animate__animated animate__fadeOutUp'
-    }
-  });
-} else if (!isRadioSelected) {
-  Swal.fire({
-    text: 'Vui lòng chọn ít nhất một loại vé.',
-    icon: 'warning',
-    confirmButtonText: 'OK',
-    showClass: {
-      popup: 'animate__animated animate__fadeInDown'
-    },
-    hideClass: {
-      popup: 'animate__animated animate__fadeOutUp'
-    }
-  });
-} else if (!isNumInputValid) {
-  Swal.fire({
-    text: 'Vui lòng nhập số lượng vé.',
-    icon: 'warning',
-    confirmButtonText: 'OK',
-    showClass: {
-      popup: 'animate__animated animate__fadeInDown'
-    },
-    hideClass: {
-      popup: 'animate__animated animate__fadeOutUp'
-    }
-  });
+  
 }
-
-  // Tiếp tục xử lý khi tất cả các điều kiện đều thỏa mãn
-  if (isRadioSelected && isNumInputValid) {
-    // Thực hiện các hành động khác ở đây sau khi submit thành công
-    // ...
-  }
-}
-
 
 
 
@@ -184,8 +180,63 @@ function handleLiClick() {
 
       // Thêm class "checkedButton" vào li được click
       li.classList.add("active");
-    });
+    });2
   });
+}
+
+function animateContainers1() {
+  const container1 = document.getElementById('container1');
+  const container2 = document.getElementById('container2');
+
+  setTimeout(() =>{
+    container1.style.transition = '0.3s';
+    container1.style.transform = 'scale(0.85)';
+  
+    setTimeout(() => {
+      container1.style.transition = '0.3s';
+      container1.style.left = '-100%';
+    }, 300);
+
+  },200);
+
+
+  setTimeout(() => {
+    container2.style.transition = '0.3s';
+    container2.style.left = '0';
+  
+    setTimeout(() => {
+      container2.style.transition = '0.3s';
+      container2.style.transform = 'scale(1)';
+    }, 300);
+
+  }, 600);
+}
+
+function animateContainers2() {
+  const container1 = document.getElementById('container1');
+  const container2 = document.getElementById('container2');
+
+  setTimeout(() => {
+    container2.style.transition = '0.3s';
+    container2.style.transform = 'scale(0.85)';
+
+    setTimeout(() => {
+      container2.style.transition = '0.3s';
+      container2.style.left = '100%';
+    }, 300);
+
+  }, 200);
+
+  setTimeout(() => {
+    container1.style.transition = '0.3s';
+    container1.style.left = '0';
+
+    setTimeout(() => {
+      container1.style.transition = '0.3s';
+      container1.style.transform = 'scale(1)';
+    }, 300);
+
+  }, 600);
 }
 
 window.onload = function() {

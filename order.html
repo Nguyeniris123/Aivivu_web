@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./assets/css/order-style.css">
     <script src="./assets/js/order.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- thư viện SweetAlert -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
@@ -108,7 +109,7 @@
             <tr id="lastrow">
               <td>
                 <div class="sub">-</div>
-                <input type="number" name="adultNum" class="num" id="adultNum" min="0" max="50" step="1" value="0">
+                <input type="number" name="adultNum" class="num" id="adultNum" min="0" max="50" step="1" value="1">
                 <div class="add">+</div>
               </td>
               <td>
@@ -126,10 +127,10 @@
 
 
 
-          <input type="submit" value="Submit" id="submitBtn1" style="display: none;" onclick="handleSubmission()"> <!-- Ẩn nút submit -->
+         
           
           <label >
-            <a href="javascript:;" id="nextBtn" onclick="handleNextBtnClick(submitBtn1)"><i class="fa-solid fa-angles-right"></i></a>
+            <a href="javascript:;" id="nextBtn" onclick="handleSubmission()"><i class="fa-solid fa-angles-right"></i></a>
           </label>
         </form>
     </div>
@@ -137,12 +138,16 @@
 
 
     <div id="container2">
+
       <h1><i class="fa-solid fa-user"></i>   Thông tin hành khách</h1>
+
       <form class="box2">
+
         <div id="info01">
           <label for="full-name">Họ & Tên:</label>
           <input type="text" id="full-name" name="full-name" placeholder="Họ & Tên" required>
         </div>
+
         <div id="info02">
           <label for="sex">Giới tính:</label>
           <ul id="sex">
@@ -150,15 +155,196 @@
             <li>Nữ</li>
           </ul>
         </div>
+
         <div id="info03">
           <label for="birthday">Ngày sinh:</label>
           <input type="date" id="birthday" name="birthday" required>
         </div>
+
         <div id="info04">
+          <label for="nationality">Quốc tịch:</label>
+          <select>
+            <option value="AF">Afghanistan</option>
+            <option value="AL">Albania</option>
+            <option value="DZ">Algeria</option>
+            <option value="AS">American Samoa</option>
+            <option value="AD">Andorra</option>
+            <option value="AI">Anguilla</option>
+            <option value="AG">Antigua and Barbuda</option>
+            <option value="AR">Argentina</option>
+            <option value="AM">Armenia</option>
+            <option value="AW">Aruba</option>
+            <option value="AU">Australia</option>
+            <option value="AT">Austria</option>
+            <option value="AZ">Azerbaijan</option>
+            <option value="BS">Bahamas</option>
+            <option value="BH">Bahrain</option>
+            <option value="BD">Bangladesh</option>
+            <option value="BY">Belarus</option>
+            <option value="BE">Belgium</option>
+            <option value="BT">Bhutan</option>
+            <option value="BO">Bolivia</option>
+            <option value="BA">Bosnia and Herzegovina</option>
+            <option value="BR">Brazil</option>
+            <option value="BN">Brunei Darussalam</option>
+            <option value="BG">Bulgaria</option>
+            <option value="KH">Cambodia</option>
+            <option value="CM">Cameroon</option>
+            <option value="CA">Canada</option>
+            <option value="CL">Chile</option>
+            <option value="CN">China</option>
+            <option value="CO">Colombia</option>
+            <option value="CR">Costa Rica</option>
+            <option value="CI">Côte d'Ivoire</option>
+            <option value="HR">Croatia</option>
+            <option value="CU">Cuba</option>
+            <option value="CY">Cyprus</option>
+            <option value="CZ">Czech Republic</option>
+            <option value="DK">Denmark</option>
+            <option value="DM">Dominica</option>
+            <option value="DO">Dominican Republic</option>
+            <option value="TL">East Timor</option>
+            <option value="EC">Ecuador</option>
+            <option value="EG">Egypt</option>
+            <option value="SV">El Salvador</option>
+            <option value="EE">Estonia</option>
+            <option value="ET">Ethiopia</option>
+            <option value="FJ">Fiji</option>
+            <option value="FI">Finland</option>
+            <option value="FR">France</option>
+            <option value="PF">French Polynesia</option>
+            <option value="GE">Georgia</option>
+            <option value="DE">Germany</option>
+            <option value="GH">Ghana</option>
+            <option value="GR">Greece</option>
+            <option value="GL">Greenland</option>
+            <option value="GU">Guam</option>
+            <option value="GT">Guatemala</option>
+            <option value="HT">Haiti</option>
+            <option value="HN">Honduras</option>
+            <option value="HK">Hong Kong</option>
+            <option value="HU">Hungary</option>
+            <option value="IS">Iceland</option>
+            <option value="IN">India</option>
+            <option value="ID">Indonesia</option>
+            <option value="IR">Iran</option>
+            <option value="IQ">Iraq</option>
+            <option value="IE">Ireland</option>
+            <option value="IL">Israel</option>
+            <option value="IT">Italy</option>
+            <option value="JM">Jamaica</option>
+            <option value="JP">Japan</option>
+            <option value="JO">Jordan</option>
+            <option value="KZ">Kazakhstan</option>
+            <option value="KE">Kenya</option>
+            <option value="KI">Kiribati</option>
+            <option value="KP">North Korea</option>
+            <option value="KR">South Korea</option>
+            <option value="XK">Kosovo</option>
+            <option value="KW">Kuwait</option>
+            <option value="KG">Kyrgyzstan</option>
+            <option value="LA">Lao Republic (Laos)</option>
+            <option value="LV">Latvia</option>
+            <option value="LB">Lebanon</option>
+            <option value="LY">Libyan Arab Jamahiriya (Libya)</option>
+            <option value="LI">Liechtenstein</option>
+            <option value="LT">Lithuania</option>
+            <option value="LU">Luxembourg</option>
+            <option value="MO">Macau</option>
+            <option value="MK">Macedonia (North Macedonia)</option>
+            <option value="MG">Madagascar</option>
+            <option value="MY">Malaysia</option>
+            <option value="MV">Maldives</option>
+            <option value="MT">Malta</option>
+            <option value="MH">Marshall Islands</option>
+            <option value="MU">Mauritius</option>
+            <option value="MX">Mexico</option>
+            <option value="FM">Micronesia</option>
+            <option value="MD">Moldova</option>
+            <option value="MC">Monaco</option>
+            <option value="MN">Mongolia</option>
+            <option value="ME">Montenegro</option>
+            <option value="MA">Morocco</option>
+            <option value="MM">Myanmar (Burma)</option>
+            <option value="NA">Namibia</option>
+            <option value="NP">Nepal</option>
+            <option value="NL">Netherlands</option>
+            <option value="AN">Netherlands Antilles</option>
+            <option value="NZ">New Zealand</option>
+            <option value="NC">New Caledonia</option>
+            <option value="NI">Nicaragua</option>
+            <option value="NG">Nigeria</option>
+            <option value="MP">Northern Mariana Islands</option>
+            <option value="NO">Norway</option>
+            <option value="OM">Oman</option>
+            <option value="PK">Pakistan</option>
+            <option value="PW">Palau</option>
+            <option value="PA">Panama</option>
+            <option value="PG">Papua New Guinea</option>
+            <option value="PY">Paraguay</option>
+            <option value="PE">Peru</option>
+            <option value="PH">Philippines</option>
+            <option value="PL">Poland</option>
+            <option value="PT">Portugal</option>
+            <option value="PR">Puerto Rico</option>
+            <option value="QA">Qatar</option>
+            <option value="SC">Republic of Seychelles</option>
+            <option value="RO">Romania</option>
+            <option value="RU">Russian Federation (Russia)</option>
+            <option value="WS">Samoa</option>
+            <option value="SM">San Marino</option>
+            <option value="SA">Saudi Arabia</option>
+            <option value="SN">Senegal</option>
+            <option value="RS">Serbia</option>
+            <option value="SG">Singapore</option>
+            <option value="SK">Slovakia</option>
+            <option value="SI">Slovenia</option>
+            <option value="SB">Solomon Islands</option>
+            <option value="SO">Somalia</option>
+            <option value="ZA">South Africa</option>
+            <option value="ES">Spain</option>
+            <option value="LK">Sri Lanka</option>
+            <option value="VC">St Vincent and the Grenadines</option>
+            <option value="SE">Sweden</option>
+            <option value="CH">Switzerland</option>
+            <option value="SY">Syrian Arab Republic (Syria)</option>
+            <option value="TW">Taiwan</option>
+            <option value="TJ">Tajikistan</option>
+            <option value="TZ">Tanzania</option>
+            <option value="TH">Thailand</option>
+            <option value="TG">Togo</option>
+            <option value="TO">Tonga</option>
+            <option value="TT">Trinidad and Tobago</option>
+            <option value="TN">Tunisia</option>
+            <option value="TR">Turkey</option>
+            <option value="TM">Turkmenistan</option>
+            <option value="UA">Ukraine</option>
+            <option value="AE">United Arab Emirates</option>
+            <option value="GB">United Kingdom</option>
+            <option value="US">United States of America</option>
+            <option value="UY">Uruguay</option>
+            <option value="UM">US Minor Outlying Islands</option>
+            <option value="UZ">Uzbekistan</option>
+            <option value="VU">Vanuatu</option>
+            <option value="VA">Vatican City State</option>
+            <option value="VE">Venezuela</option>
+            <option value="VN" selected>Vietnam</option>
+            <option value="VG">Virgin Islands, British</option>
+            <option value="VI">Virgin Islands, U.S.</option>
+            <option value="YE">Yemen</option>
+            <option value="ZM">Zambia</option>
+            <option value="ZW">Zimbabwe</option>
+            <option value="PS">State of Palestine</option>
+            <option value="AO">Angola</option>
+          </select>
+        </div>
+
+        <div id="info05">
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" placeholder="Email" required>
         </div>
-        <div id="info05">
+
+        <div id="info06">
           <label for="phone">Số điện thoại:</label>
           <select name="ddlArea" id="ddlArea" placeholder="Mã vùng">
             <option value="+971">Ả rập thống nhất +971</option>
@@ -358,20 +544,38 @@
           
           </select>
         </div>
-        <div id="info06">
+
+        <div id="info07">
           <label for="phone" style="color: transparent;">Số điện thoại:</label>
           <input type="tel" id="phone" name="phone" placeholder="Số điện thoại " required>
         </div>
-        <div id="info07">
+
+        <div id="info08">
+          <label for="idMem">Số hội viên:</label>
+          <input type="password" name="idMem" id="idMem">
+        </div>
+        <div id="info09">
+          <div class="checkbox-container">
+            <input type="checkbox" id="check01" name="check01" value="option1">
+            <label for="check01">Đăng ký để cập nhật thông tin mới nhất từ hãng và các chương trình khuyến mại</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="check02" name="check02" value="option2">
+            <label for="check02">Nhận thông tin đặt chỗ bằng tin nhắn SMS</label>
+          </div>
+        </div>
+
+        <div id="info10">
           <label for="note">Ghi chú:</label>
           <textarea id="note" name="note"></textarea><br>
         </div>
         
         
         
+        
 
         <label >
-              <a href="javascript:;" id="prevBtn" ><i class="fa-solid fa-angles-left"></i></a>
+              <a href="javascript:;" id="prevBtn" onclick="animateContainers2()"><i class="fa-solid fa-angles-left"></i></a>
         </label>
         
         <input type="submit" value="Submit" id="submitBtn2" style="display: none;" > 
