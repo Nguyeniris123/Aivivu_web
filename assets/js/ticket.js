@@ -5,8 +5,8 @@ function loadVouchers() {
         for(let p of data)
             h+=`
             <div class="voucher-ticket col l-4 m-12 c-12">
-                    <a href=""><img src="./assets/img/${p.image}" alt=""></a>
-                    <a href="">${p.name}</a>
+                    <a href="order.html" target="_blank"><img src="./assets/img/${p.image}" alt=""></a>
+                    <a href="order.html" target="_blank">${p.name}</a>
             </div>
             `;
         let d = document.getElementById("voucher");
@@ -21,8 +21,8 @@ function loadCombos() {
         for(let d of data)
             h+=`
             <div class="combo-ticket col l-3 m-12 c-12">
-                <a href=""><img src="./assets/img/${d.image}" alt=""></a>
-                <a href="">${d.name}"</a>
+                <a href="order.html" target="_blank"><img src="./assets/img/${d.image}" alt=""></a>
+                <a href="order.html" target="_blank">${d.name}"</a>
                 <div class="combo-ticket-sub">
                     <p> <i class="fa-solid fa-location-dot"></i> ${d.p1}</p>
                     <p> <i class="fa-solid fa-signs-post"></i> ${d.p2}</p>
@@ -42,8 +42,8 @@ function loadCheaps() {
         for(let c of data)
             h+=`
             <div class="cheap-ticket col l-4 m-12 c-12">
-                    <a href=""><img src="./assets/img/${c.image}" alt=""></a>
-                    <a href="">${c.name}</a>
+                    <a href="order.html" target="_blank"><img src="./assets/img/${c.image}" alt=""></a>
+                    <a href="order.html" target="_blank">${c.name}</a>
             </div>
             `;
         let d = document.getElementById("cheap");

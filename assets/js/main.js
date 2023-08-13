@@ -43,7 +43,7 @@ function changeBackgroundImageLeft(obj) {
 // Đặt thời gian để thay đổi hình ảnh sau mỗi 2 giây (1000ms = 1s)
 setInterval(changeBackgroundImageRight, 2000);
 
-// request-box (requestcathay.html) begin
+// Check search info begin
 function validate(ele) {
     if (ele.value === '') {
         ele.classList.remove("error");
@@ -53,29 +53,21 @@ function validate(ele) {
     return false;
 }
 
-function send() {
-    let a = document.getElementById("booking-code");
-    if (a !== null) {
-        if (validate(a) === true ) {
-            let k = "- Quý khách vui lòng nhập CMND/ Hộ chiếu/ Mã booking";
-            let kq = document.getElementById("kq");
-            if (kq !== null ) {
-                kq.innerHTML = `<h3 style="color:red;">${k}</h3>`;
-            } else 
-            alert(kq);
+function check() {
+    let a = document.getElementById("place1");
+    let b = document.getElementById("place2");
+    let c = document.getElementById("time1");
+    let d = document.getElementById("time2");
+    let e = document.getElementById("people");
+
+    if (a !== null && b != null && c != null && d != null && e != null) {
+        if (validate(a) === true || validate(b) === true || validate(c) === true || validate(d) === true || validate(e) === true) {
+            event.preventDefault();
             return;
-        }
-        else {
-            let kq = document.getElementById("kq");
-            let h ="Chúng tôi sẽ xem xét trong thời gian sớm nhất và thông báo xác nhận đến bạn qua email"
-            if (kq !== null ) {
-                kq.innerHTML = `<h3 style="color:red;">${h}</h3>`;
-            } else 
-            alert(kq);
         }
     }
 }
-// request-box (requestcathay.html) end
+// Check search info end
 
 // JQUERY
 $(document).ready(function() {

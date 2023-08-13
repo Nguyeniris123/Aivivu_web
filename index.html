@@ -93,10 +93,10 @@
                     <li class="col l-3 m-6 c-6">
                         <label class="info-sub" for="time1">Ngày đi</label>
                         <div class="box">
-                            <input type="date" name="" id="time1" class="info-time"  placeholder=""> 
+                            <input type="date" name="" id="time1" class="info-time" placeholder=""> 
                         </div>
-                        &#129333 Hành khách
-                        <input class="people" type="number"  min="1" max="100">
+                        <label for="people"><i class="fa-solid fa-users"></i> Hành khách</label>
+                        <input class="people" id="people" type="number"  min="1" max="100">
                     </li>
 
                     <li class="col l-3 m-6 c-6">
@@ -104,7 +104,7 @@
                         <div class="box">
                             <input type="date" name="" id="time2" class="info-time"  placeholder="---">
                         </div>
-                        <input type="button" class="search-airline" value="Tìm chuyến bay">
+                        <a href="order.html" target="_blank"><input type="button" class="search-airline" value="Tìm chuyến bay" onclick="check()"></a>
                     </li>
                 </ul>    
             </form>
@@ -163,8 +163,8 @@
 
                     <div class="row" id="voucher">
                         <div class="voucher-ticket col l-4 m-12 c-12">
-                            <a href=""><img src="./assets/img/voucher1.jpg" alt=""></a>
-                            <a href="">Aivivu Airways khuyến mãi 99k giá vé máy bay nội địa</a>
+                            <a href="order.html" target="_blank"><img src="./assets/img/voucher1.jpg" alt=""></a>
+                            <a href="order.html" target="_blank">Aivivu Airways khuyến mãi 99k giá vé máy bay nội địa</a>
                         </div>
                     </div>
                 </div>
@@ -178,8 +178,8 @@
 
                     <div class="row" id="combo">
                         <div class="combo-ticket col l-3 m-12 c-12">
-                            <a href=""><img src="./assets/img/combo1.jpg" alt=""></a>
-                            <a href="">Aivivu Airlines ưu đãi mua 2 tặng 1 chuyến bay Đông Nam á</a>
+                            <a href="order.html" target="_blank"><img src="./assets/img/combo1.jpg" alt=""></a>
+                            <a href="order.html" target="_blank">Aivivu Airlines ưu đãi mua 2 tặng 1 chuyến bay Đông Nam á</a>
                             <div class="combo-ticket-sub">
                                 <p> <i class="fa-solid fa-location-dot"></i> Khởi hành: Tự túc</p>
                                 <p> <i class="fa-solid fa-signs-post"></i> Điểm đến: Hà Nội</p>
@@ -197,8 +197,8 @@
                     </div>
                     <div class="row" id="cheap">
                         <div class="cheap-ticket col1 l-4 m-12 c-12">
-                            <a href=""><img src="./assets/img/cheap1.jpg" alt=""></a>
-                            <a href="">Vé máy bay đi Mỹ giá tốt nhiều ưu đãi tại Aivivu</a>
+                            <a href="order.html" target="_blank"><img src="./assets/img/cheap1.jpg" alt=""></a>
+                            <a href="order.html" target="_blank">Vé máy bay đi Mỹ giá tốt nhiều ưu đãi tại Aivivu</a>
                         </div>
                     </div>
                 </div>

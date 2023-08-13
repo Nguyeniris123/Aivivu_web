@@ -199,12 +199,24 @@ html {
     cursor: pointer;
     background-color: red;
     color: #fff;
-
 }
 
 .people {
     width: 50px;
 }
+
+@keyframes err {
+    from {
+        outline: unset;
+    }
+    to {
+        outline: 1px solid black;
+    }
+    }
+
+    .error {
+        animation: err .5s 3;
+    }
 
 #content a {
     text-decoration: none;
@@ -248,7 +260,7 @@ html {
 .voucher-ticket img:hover,
 .combo-ticket img:hover,
 .cheap-ticket img:hover {
-    transform: scale(0.9); 
+    transform: scale(1.1); 
 }
 
 .combo-ticket {
