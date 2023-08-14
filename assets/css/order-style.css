@@ -71,6 +71,13 @@ h1 {
     margin-right: 10vw;
     font-weight: 450;
     font-size: 36px;
+    text-shadow: 8px 8px 4px rgba(0,0,0,0.6);
+    transition: all 0.3s;
+}
+
+h1:hover {
+    text-shadow: -2px 2px 1px rgba(0,0,0,0.6);
+
 }
 
 .box1, .box2 {
