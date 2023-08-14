@@ -271,6 +271,45 @@ ol {
     z-index: 99;
 }
 
+#chatbox {
+    color: rgb(28, 28, 173);
+    position: fixed;
+    font-size: 60px;
+    bottom: 10%;
+    right: 1%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+}
+
+#chatbox-text {
+    display: none;
+    color: yellow;
+    margin-right: 10px;
+    font-size: 30px;
+    animation: jump 1s infinite;
+}
+
+.fa-brands.fa-facebook-messenger:hover {
+    opacity: 0.9;
+}
+
+#chatbox:hover #chatbox-text {
+    display: block;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    20%, 80% {
+        transform: translateY(-20px);
+    }
+    40%, 60% {
+        transform: translateY(-10px);
+    }
+}
+
 /* PC medium resolution > */
 @media (min-width: 1024px) {
 

@@ -174,11 +174,6 @@ body {
     font-weight: 400;
 }
 
-.active {
-    background-color: darkred !important;
-    z-index: 2;
-}
-
 /* >= Tablet */
 @media (min-width: 740px) {
     .grid {
