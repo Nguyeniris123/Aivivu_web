@@ -259,7 +259,7 @@ html {
     font-size: 30px;
     bottom: 2%;
     right: 2%;
-    z-index: 99;
+    z-index: 1;
 }
 
 #chatbox {
@@ -268,7 +268,7 @@ html {
     font-size: 60px;
     bottom: 10%;
     right: 1%;
-    z-index: 99;
+    z-index: 1;
     display: flex;
     align-items: center;
 }
@@ -348,10 +348,6 @@ html {
     .download {
         margin-top: 60px;
     }
-
-    h3 {
-        display: inline-block;
-    }
 }
 
 /* Tablet - PC low resolution */
@@ -404,10 +400,6 @@ html {
 
     .download {
         margin-top: 60px;
-    }
-
-    h3 {
-        display: inline-block;
     }
 }
 
