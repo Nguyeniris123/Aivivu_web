@@ -6,6 +6,9 @@
 
 :root {
     --mainColor: rgb(0, 163, 250);
+    --font-size-large: 28px;
+    --font-size-medium: 16px;
+    --font-size-small: 8px;
   }
 
 .checkedButton {
@@ -44,6 +47,7 @@ body {
     color: #fff;
     position: relative;
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
 }
 
@@ -60,7 +64,6 @@ body {
 }
 
 h1 {
-    
     line-height: 20vh;
     text-align: left;
     text-transform: uppercase;
@@ -68,7 +71,6 @@ h1 {
     margin-right: 10vw;
     font-weight: 450;
     font-size: 36px;
-    
 }
 
 .box1, .box2 {
@@ -81,37 +83,74 @@ h1 {
     position: relative;
 }
 
+.labelBox {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
 .labelBox label  {
     margin: 0 5vw 0 0;
 }
 
-.labelBox {
-    margin-bottom: 12px;
-}
 
 .box1 #table1 {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .box1 #table1 input,select {
     margin-bottom: 12px;
 }
 
-.box1 #table1 input[type=text] {
-    width: 25vw;
+.box1 #table1 input {
+    width: 85%;
     line-height: 2;
     padding-left: 5px;
     padding-right: 5px;  
 }
 
 .box1 #table1 input[type=date] {
-    width: calc(100% - 12px);
+    width: 100%;
     line-height: 2;
 }
 
-.box1 #table1 #travelclass {
+.box1 #table1 select {
     height: 32px;
+    width: 85%;
+}
+
+.box1 [id^="ticket"] {
+    margin-right: var(--font-size-large);
+    margin-bottom: 1rem;
+    height: auto;
+}
+
+.box1 #table1 .item-title {
+    line-height: 2;
+}
+
+.box1 #ticket01 {
+    width: calc(50% - var(--font-size-large));
+}
+
+.box1 #ticket02 {
+    width: calc(50% - var(--font-size-large));
 
 }
+
+.box1 #ticket03 {
+    width: calc(calc(100% / 3) - var(--font-size-large));
+}
+
+.box1 #ticket04 {
+    width: calc(calc(100% / 3) - var(--font-size-large));
+}
+
+.box1 #ticket05 {
+    width: calc(calc(100% / 3) - var(--font-size-large));
+}
+
+
 
 
 .box1 #table2 {
@@ -119,6 +158,19 @@ h1 {
     text-align: left;
     line-height: 1;
     
+}
+
+.box1 #table2 .bodyTable {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box1 #table2 .bodyTable .typeTicket {
+    height: 36px;
+}
+
+.box1 #table2 .bodyTable .td {
+    width: calc(100% / 3);
 }
 
 .box1 #table2 .note {
@@ -130,13 +182,13 @@ h1 {
     cursor: help;
 }
 
-.box1 #table2 th{
+.box1 #table2 .th{
     font-size: 20px;
     line-height: 3;
 }
 
 
-#table2 td {
+#table2 .td {
     /* border: 1px solid red; */
     padding: 4px;
     vertical-align: top;
@@ -202,7 +254,7 @@ h1 {
     line-height: 2;
 }
 .box2 [id^="info"] {
-    margin-right: 28px;
+    margin-right: var(--font-size-large);
     margin-bottom: 1rem;
     height: auto;
 }
@@ -224,11 +276,11 @@ h1 {
 }
 
 .box2 #info01 {
-    width: calc(40% - 28px);
+    width: calc(40% - var(--font-size-large));
 }
 
 .box2 #info02 {
-    width: calc(20% - 28px);
+    width: calc(20% - var(--font-size-large));
 
 }
 
@@ -248,31 +300,31 @@ h1 {
 }
 
 .box2 #info03 {
-    width: calc(20% - 28px);
+    width: calc(20% - var(--font-size-large));
 }
 
 .box2 #info04 {
-    width: calc(20% - 28px);
+    width: calc(20% - var(--font-size-large));
 }
 
 .box2 #info05 {
-    width: calc(60% - 28px);
+    width: calc(60% - var(--font-size-large));
 }
 
 .box2 #info06 {
-    width: calc(20% - 28px);
+    width: calc(20% - var(--font-size-large));
 }
 
 .box2 #info07 {
-    width: calc(20% - 28px);
+    width: calc(20% - var(--font-size-large));
 }
 
 .box2 #info08 {
-    width: calc(25% - 28px);
+    width: calc(25% - var(--font-size-large));
 }
 
 .box2 #info09 {
-    width: calc(75% - 28px);
+    width: calc(75% - var(--font-size-large));
 }
 
 
@@ -294,7 +346,7 @@ h1 {
 
 
 .box2 #info10 {
-    width: calc(100% - 28px);
+    width: calc(100% - var(--font-size-large));
 }
 
 .box2 #info10 textarea {
@@ -325,4 +377,260 @@ h1 {
     position: absolute;
     bottom: 10%;
     right: 10%;
+}
+
+
+/* Tablet - PC low resolution */
+@media (min-width: 810px) and (max-width: 1023px) {
+
+    .box1, .box2 {
+        width: 90vw;
+        height: 70vh;
+        background-color: rgba(0,0,0,0.6);
+        border-radius: 3px;
+        margin: 0 5vw 5vh 5vw;
+        padding: 1.5rem;
+        line-height: 1;
+    }
+
+
+
+    .box1 [id^="ticket"] {
+        margin-right: var(--font-size-medium);
+        margin-bottom: 1rem;
+        height: auto;
+    }
+    
+    .box1 #table1 .item-title {
+        line-height: 2;
+    }
+    
+    .box1 #ticket01 {
+        width: calc(50% - var(--font-size-medium));
+    }
+    
+    .box1 #ticket02 {
+        width: calc(50% - var(--font-size-medium));
+    
+    }
+    
+    .box1 #ticket03 {
+        width: calc(30% - var(--font-size-medium));
+    }
+    
+    .box1 #ticket04 {
+        width: calc(30% - var(--font-size-medium));
+    }
+    
+    .box1 #ticket05 {
+        width: calc(40% - var(--font-size-medium));
+    }
+
+
+
+    .box2 [id^="info"] {
+        margin-right: var(--font-size-medium);
+    }
+
+    .box2 #info01 {
+        width: calc(40% - var(--font-size-medium));
+    }
+    
+    .box2 #info02 {
+        width: calc(20% - var(--font-size-medium));
+    
+    }
+    
+    .box2 #info03 {
+        width: calc(20% - var(--font-size-medium));
+    }
+    
+    .box2 #info04 {
+        width: calc(20% - var(--font-size-medium));
+    }
+    
+    .box2 #info05 {
+        width: calc(60% - var(--font-size-medium));
+    }
+    
+    .box2 #info06 {
+        width: calc(20% - var(--font-size-medium));
+    }
+    
+    .box2 #info07 {
+        width: calc(20% - var(--font-size-medium));
+    }
+    
+    .box2 #info08 {
+        width: calc(25% - var(--font-size-medium));
+    }
+    
+    .box2 #info09 {
+        width: calc(75% - var(--font-size-medium));
+    }
+}
+
+
+/* Mobie */
+@media (max-width: 809px) {
+    h1 {
+        line-height: 5vh;
+        text-align: left;
+        text-transform: uppercase;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        font-weight: 450;
+        font-size: 20px;
+    }
+    .box1, .box2 {
+        width: 96vw;
+        height: 95vh;
+        background-color: rgba(0,0,0,0.6);
+        border-radius: 3px;
+        margin: 0 2vw 2vh 2vw;
+        padding: 1rem;
+        line-height: 1.6;
+    }
+
+    .labelBox label {
+        margin: 0 5px 0 0;
+    }
+
+
+    .box1 #table1 input {
+        width: 100%;
+        margin: 0;
+    }
+
+    .box1 #table1 select {
+        height: 32px;
+        width: 100%;
+    }
+
+    .box1 #table1 #ticket05 select {
+        width: 50%;
+    }
+
+    .box1 [id^="ticket"] {
+        margin-right: var(--font-size-small);
+        margin-right: 4px;
+        margin-bottom: 4px;
+        height: auto;
+    }
+
+
+    
+    .box1 #table1 .item-title {
+        line-height: 1.4;
+    }
+    
+    .box1 #ticket01 {
+        width: calc(100% - var(--font-size-small));
+    }
+    
+    .box1 #ticket02 {
+        width: calc(100% - var(--font-size-small));
+    
+    }
+    
+    .box1 #ticket03 {
+        width: calc(50% - var(--font-size-small));
+    }
+    
+    .box1 #ticket04 {
+        width: calc(50% - var(--font-size-small));
+    }
+    
+    .box1 #ticket05 {
+        width: calc(100% - var(--font-size-small));
+    }
+
+
+
+    .box1 #table2 {
+        width: 100%;
+        text-align: left;
+        line-height: 1;
+    }
+    .note {
+        display: none;
+    }
+
+    .box1 #table2 .th {
+        font-size: 20px;
+        line-height: 1.4;
+        font-weight: 500;
+    }
+
+    #table2 .sub, .add {
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        background-color: var(--mainColor);
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+    }
+    #table2 input[type=number] {
+        height: 20px;
+        width: 24px;
+        text-align: center;
+        border: none;
+    }
+      
+
+    .box2 [id^="info"] {
+        margin-right: var(--font-size-small);
+    }
+    
+    .box2 #info01 {
+        width: calc(100% - var(--font-size-small));
+    }
+    
+    .box2 #info02 {
+        width: calc(35% - var(--font-size-small));
+    
+    }
+    
+    .box2 #info03 {
+        width: calc(30% - var(--font-size-small));
+    }
+    
+    .box2 #info04 {
+        width: calc(35% - var(--font-size-small));
+    }
+    
+    .box2 #info05 {
+        width: calc(100% - var(--font-size-small));
+    }
+    
+    .box2 #info06 {
+        width: calc(40% - var(--font-size-small));
+    }
+    
+    .box2 #info07 {
+        width: calc(60% - var(--font-size-small));
+    }
+    
+    .box2 #info08 {
+        width: calc(60% - var(--font-size-small));
+    }
+    
+    .box2 #info09 {
+        width: calc(100% - var(--font-size-small));
+    }
+
+    #nextBtn, #done{
+        width: 36px;
+        font-size: 20px;
+        bottom: 5%;
+        right: 5%;
+    }
+    #prevBtn{
+        width: 36px;
+        font-size: 20px;
+        bottom: 5%;
+        left: 5%;
+    }
+    
 }

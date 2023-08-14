@@ -30,11 +30,11 @@ function handleButtons() {
 
 function setupIncrementDecrement() {
   // Lấy danh sách các nút "+" và "-" trong bảng
-  var buttons = document.querySelectorAll("#lastrow .sub, #lastrow .add");
+  var buttons = document.querySelectorAll(".td .sub, .td .add");
 
   // Lặp qua danh sách các nút và thêm sự kiện onclick
-  buttons.forEach(function(button) {
-    button.addEventListener("click", function() {
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
       // Lấy ô cha chứa nút và input number
       var parent = this.parentNode;
       var input = parent.querySelector("input[type='number']");
@@ -57,9 +57,8 @@ function setupIncrementDecrement() {
   });
 }
 
-// function handleNextBtnClick(btn) {
-//   document.getElementById(btn).click();
-// }
+
+
 function handleNextBtnClick(btn) {
   btn.click();
 }

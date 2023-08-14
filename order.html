@@ -37,93 +37,281 @@
             </label><br> 
           </div>
           <!-- Bảng 1  -->
-          <table id="table1">
-            <tr>
-              <td colspan="2">
+          <div id="table1">
+
+            <div id="ticket01">
+              <div class="item-title">
                 <i class="fa-solid fa-plane-departure"></i> Điểm khởi hành / From
-              </td>
-              <td colspan="2">
+              </div>
+              <select id="departure" required>
+                <optgroup label="Nội địa">
+                  <option value="SGN">Thành phố Hồ Chí Minh (SGN)</option>
+                  <option value="HAN">Hà Nội (HAN)</option>
+                  <option value="DAD">Đà Nẵng (DAD)</option>
+                  <option value="CXR">Nha Trang (CXR)</option>
+                  <option value="PQC">Phú Quốc (PQC)</option>
+                  <option value="HUI">Huế (HUI)</option>
+                  <option value="HPH">Hải Phòng (HPH)</option>
+                  <option value="VII">Vinh (VII)</option>
+                  <option value="DIN">Điện Biên (DIN)</option>
+                  <option value="UIH">Quy Nhơn (UIH)</option>
+                  <option value="PXU">Pleiku (PXU)</option>
+                  <option value="VCL">Tam Kỳ (VCL)</option>
+                  <option value="VCA">Cần Thơ (VCA)</option>
+                  <option value="VCS">Côn Đảo (VCS)</option>
+                  <option value="DLI">Đà Lạt (DLI)</option>
+                  <option value="THD">Thanh Hóa (THD)</option>
+                  <option value="VDH">Đồng Hới (VDH)</option>
+                  <option value="TBB">Tuy Hòa (TBB)</option>
+                  <option value="VKG">Rạch Giá (VKG)</option>
+                  <option value="CAH">Cà Mau (CAH)</option>
+                  <option value="VDO">Vân Đồn (VDO)</option>
+                </optgroup>
+                <optgroup label="Quốc tế">
+                  <option value="JFK">John F. Kennedy (JFK)</option>
+                  <option value="LHR">Heathrow (LHR)</option>
+                  <option value="CDG">Charles de Gaulle (CDG)</option>
+                  <option value="FRA">Frankfurt (FRA)</option>
+                  <option value="AMS">Amsterdam Schiphol (AMS)</option>
+                  <option value="ICN">Incheon (ICN)</option>
+                  <option value="HKG">Hong Kong (HKG)</option>
+                  <option value="DXB">Dubai (DXB)</option>
+                  <option value="SIN">Changi (SIN)</option>
+                  <option value="BKK">Suvarnabhumi (BKK)</option>
+                  <option value="PEK">Beijing Capital (PEK)</option>
+                  <option value="SYD">Sydney (SYD)</option>
+                  <option value="SFO">San Francisco (SFO)</option>
+                  <option value="LAX">Los Angeles (LAX)</option>
+                  <option value="JNB">O. R. Tambo (JNB)</option>
+                  <option value="GRU">São Paulo–Guarulhos (GRU)</option>
+                  <option value="IST">Istanbul (IST)</option>
+                  <option value="MUC">Munich (MUC)</option>
+                  <option value="FCO">Leonardo da Vinci–Fiumicino (FCO)</option>
+                  <option value="NRT">Narita (NRT)</option>
+                  <option value="YYZ">Toronto Pearson (YYZ)</option>
+                  <option value="MEX">Mexico City (MEX)</option>
+                  <option value="BCN">Barcelona–El Prat (BCN)</option>
+                  <option value="MAD">Adolfo Suárez Madrid–Barajas (MAD)</option>
+                  <option value="MIA">Miami (MIA)</option>
+                  <option value="EWR">Newark Liberty (EWR)</option>
+                  <option value="LGA">LaGuardia (LGA)</option>
+                  <option value="BOS">Logan (BOS)</option>
+                  <option value="ORD">O'Hare (ORD)</option>
+                  <option value="ATL">Hartsfield–Jackson Atlanta (ATL)</option>
+                  <option value="DFW">Dallas/Fort Worth (DFW)</option>
+                  <option value="DEN">Denver (DEN)</option>
+                  <option value="LAS">McCarran (LAS)</option>
+                  <option value="SEA">Seattle–Tacoma (SEA)</option>
+                  <option value="EZE">Ministro Pistarini (EZE)</option>
+                  <option value="SCL">Comodoro Arturo Merino Benítez (SCL)</option>
+                  <option value="GIG">Rio de Janeiro–Galeão (GIG)</option>
+                  <option value="LIM">Jorge Chávez (LIM)</option>
+                  <option value="BOG">El Dorado (BOG)</option>
+                  <option value="PTY">Tocumen (PTY)</option>
+                  <option value="SAN">San Diego (SAN)</option>
+                  <option value="PHX">Phoenix Sky Harbor (PHX)</option>
+                  <option value="YVR">Vancouver (YVR)</option>
+                  <option value="YYC">Calgary (YYC)</option>
+                  <option value="YUL">Montréal–Trudeau (YUL)</option>
+                  <option value="YEG">Edmonton (YEG)</option>
+                  <option value="DEL">Indira Gandhi (DEL)</option>
+                  <option value="BOM">Chhatrapati Shivaji Maharaj (BOM)</option>
+                  <option value="KUL">Kuala Lumpur (KUL)</option>
+                  <option value="CGK">Soekarno-Hatta (CGK)</option>
+                  <option value="BNE">Brisbane (BNE)</option>
+                  <option value="AKL">Auckland (AKL)</option>
+                  <option value="LHR">London Heathrow (LHR)</option>
+                  <option value="CDG">Charles de Gaulle (CDG)</option>
+                  <option value="FRA">Frankfurt (FRA)</option>
+                  <option value="AMS">Amsterdam Schiphol (AMS)</option>
+                  <option value="ICN">Incheon (ICN)</option>
+                  <option value="HKG">Hong Kong (HKG)</option>
+                  <option value="DXB">Dubai (DXB)</option>
+                  <option value="SIN">Singapore Changi (SIN)</option>
+                  <option value="BKK">Suvarnabhumi (BKK)</option>
+                  <option value="PEK">Beijing Capital (PEK)</option>
+                  <option value="SYD">Sydney (SYD)</option>
+                  <option value="SFO">San Francisco (SFO)</option>
+                  <option value="LAX">Los Angeles (LAX)</option>
+                  <option value="JNB">O. R. Tambo (JNB)</option>
+                  <option value="GRU">São Paulo–Guarulhos (GRU)</option>
+                </optgroup>
+              </select>
+            </div>
+            <div id="ticket02">
+              <div class="item-title">
                 <i class="fa-solid fa-plane-arrival"></i> Điểm đến / To<br>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <input type="text" name="" id="departure" placeholder="" required>
-              </td>
-              <td colspan="2">
-                <input type="text" name="" id="destination" placeholder="" required><br>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
+              </div>
+              <select id="destination" required>
+                <optgroup label="Nội địa">
+                  <option value="HAN">Hà Nội (HAN)</option>
+                  <option value="SGN">Thành phố Hồ Chí Minh (SGN)</option>
+                  <option value="DAD">Đà Nẵng (DAD)</option>
+                  <option value="CXR">Nha Trang (CXR)</option>
+                  <option value="PQC">Phú Quốc (PQC)</option>
+                  <option value="HUI">Huế (HUI)</option>
+                  <option value="HPH">Hải Phòng (HPH)</option>
+                  <option value="VII">Vinh (VII)</option>
+                  <option value="DIN">Điện Biên (DIN)</option>
+                  <option value="UIH">Quy Nhơn (UIH)</option>
+                  <option value="PXU">Pleiku (PXU)</option>
+                  <option value="VCL">Tam Kỳ (VCL)</option>
+                  <option value="VCA">Cần Thơ (VCA)</option>
+                  <option value="VCS">Côn Đảo (VCS)</option>
+                  <option value="DLI">Đà Lạt (DLI)</option>
+                  <option value="THD">Thanh Hóa (THD)</option>
+                  <option value="VDH">Đồng Hới (VDH)</option>
+                  <option value="TBB">Tuy Hòa (TBB)</option>
+                  <option value="VKG">Rạch Giá (VKG)</option>
+                  <option value="CAH">Cà Mau (CAH)</option>
+                  <option value="VDO">Vân Đồn (VDO)</option>
+                </optgroup>
+                <optgroup label="Quốc tế">
+                  <option value="JFK">John F. Kennedy (JFK)</option>
+                  <option value="LHR">Heathrow (LHR)</option>
+                  <option value="CDG">Charles de Gaulle (CDG)</option>
+                  <option value="FRA">Frankfurt (FRA)</option>
+                  <option value="AMS">Amsterdam Schiphol (AMS)</option>
+                  <option value="ICN">Incheon (ICN)</option>
+                  <option value="HKG">Hong Kong (HKG)</option>
+                  <option value="DXB">Dubai (DXB)</option>
+                  <option value="SIN">Changi (SIN)</option>
+                  <option value="BKK">Suvarnabhumi (BKK)</option>
+                  <option value="PEK">Beijing Capital (PEK)</option>
+                  <option value="SYD">Sydney (SYD)</option>
+                  <option value="SFO">San Francisco (SFO)</option>
+                  <option value="LAX">Los Angeles (LAX)</option>
+                  <option value="JNB">O. R. Tambo (JNB)</option>
+                  <option value="GRU">São Paulo–Guarulhos (GRU)</option>
+                  <option value="IST">Istanbul (IST)</option>
+                  <option value="MUC">Munich (MUC)</option>
+                  <option value="FCO">Leonardo da Vinci–Fiumicino (FCO)</option>
+                  <option value="NRT">Narita (NRT)</option>
+                  <option value="YYZ">Toronto Pearson (YYZ)</option>
+                  <option value="MEX">Mexico City (MEX)</option>
+                  <option value="BCN">Barcelona–El Prat (BCN)</option>
+                  <option value="MAD">Adolfo Suárez Madrid–Barajas (MAD)</option>
+                  <option value="MIA">Miami (MIA)</option>
+                  <option value="EWR">Newark Liberty (EWR)</option>
+                  <option value="LGA">LaGuardia (LGA)</option>
+                  <option value="BOS">Logan (BOS)</option>
+                  <option value="ORD">O'Hare (ORD)</option>
+                  <option value="ATL">Hartsfield–Jackson Atlanta (ATL)</option>
+                  <option value="DFW">Dallas/Fort Worth (DFW)</option>
+                  <option value="DEN">Denver (DEN)</option>
+                  <option value="LAS">McCarran (LAS)</option>
+                  <option value="SEA">Seattle–Tacoma (SEA)</option>
+                  <option value="EZE">Ministro Pistarini (EZE)</option>
+                  <option value="SCL">Comodoro Arturo Merino Benítez (SCL)</option>
+                  <option value="GIG">Rio de Janeiro–Galeão (GIG)</option>
+                  <option value="LIM">Jorge Chávez (LIM)</option>
+                  <option value="BOG">El Dorado (BOG)</option>
+                  <option value="PTY">Tocumen (PTY)</option>
+                  <option value="SAN">San Diego (SAN)</option>
+                  <option value="PHX">Phoenix Sky Harbor (PHX)</option>
+                  <option value="YVR">Vancouver (YVR)</option>
+                  <option value="YYC">Calgary (YYC)</option>
+                  <option value="YUL">Montréal–Trudeau (YUL)</option>
+                  <option value="YEG">Edmonton (YEG)</option>
+                  <option value="DEL">Indira Gandhi (DEL)</option>
+                  <option value="BOM">Chhatrapati Shivaji Maharaj (BOM)</option>
+                  <option value="KUL">Kuala Lumpur (KUL)</option>
+                  <option value="CGK">Soekarno-Hatta (CGK)</option>
+                  <option value="BNE">Brisbane (BNE)</option>
+                  <option value="AKL">Auckland (AKL)</option>
+                  <option value="LHR">London Heathrow (LHR)</option>
+                  <option value="CDG">Charles de Gaulle (CDG)</option>
+                  <option value="FRA">Frankfurt (FRA)</option>
+                  <option value="AMS">Amsterdam Schiphol (AMS)</option>
+                  <option value="ICN">Incheon (ICN)</option>
+                  <option value="HKG">Hong Kong (HKG)</option>
+                  <option value="DXB">Dubai (DXB)</option>
+                  <option value="SIN">Singapore Changi (SIN)</option>
+                  <option value="BKK">Suvarnabhumi (BKK)</option>
+                  <option value="PEK">Beijing Capital (PEK)</option>
+                  <option value="SYD">Sydney (SYD)</option>
+                  <option value="SFO">San Francisco (SFO)</option>
+                  <option value="LAX">Los Angeles (LAX)</option>
+                  <option value="JNB">O. R. Tambo (JNB)</option>
+                  <option value="GRU">São Paulo–Guarulhos (GRU)</option>
+                </optgroup>
+              </select>
+            </div>
+            <div id="ticket03">
+              <div class="item-title">
                 <i class="fa-regular fa-calendar-days"></i> Ngày đi / Departing
-              </td>
-              <td>
+              </div>
+              <input type="date" name="" id="departing" required >
+            </div>
+            <div id="ticket04">
+              <div class="item-title">
                 <i class="fa-regular fa-calendar-days"></i> Ngày về / Returning<br>
-              </td>
-              <td colspan="2">
+              </div>
+              <input type="date" name="" id="returning" required ><br>
+            </div>
+            <div id="ticket05">
+              <div class="item-title">
                 <i class="fa-solid fa-grip-lines"></i> Hạng ghế / Travel class
-              </td>
-              
-            </tr>
-            <tr>
-              <td>
-                <input type="date" name="" id="departing" required >
-              </td>
-              <td>
-                <input type="date" name="" id="returning" required ><br>
-              </td>
-
-              <td colspan="2">
-                <select name="travelclass" id="travelclass">
-                  <option value="FirstClass">Hạng nhất (First Class)</option>
-                  <option value="BusinessClass">Hạng Thương gia (Business Class)</option>
-                  <option value="EconomyClass" selected>Hạng Phổ thông (Economy Class)</option>
-                </select>
-              </td>
-            </tr>
-          </table>
+              </div>
+              <select name="travelclass" id="travelclass">
+                <option value="FirstClass">Hạng nhất (First Class)</option>
+                <option value="BusinessClass">Hạng Thương gia (Business Class)</option>
+                <option value="EconomyClass" selected>Hạng Phổ thông (Economy Class)</option>
+              </select>
+            </div>
+            
+          </div>
           
           <!-- Bảng 2 -->
-          <table id="table2">
-            <tr>
-              <th id="tableTitle" colspan="3">
+          <div id="table2">
+            <div class="th">
                 Hành khách / Passengers
-              </th>
-              
-            </tr>
-            <tr>
-              <td>
-                Người lớn / Adult(s)
-              </td>
-              <td>
-                Trẻ em / Child(ren) <br>
-                <span class="note">2 to under 12 years old</span>
-              </td>
-              <td>
-                Em bé / Infant(s) <br>
-                <span class="note">under 2 years old</span>
-              </td>
-            </tr>
-            <tr id="lastrow">
-              <td>
-                <div class="sub">-</div>
-                <input type="number" name="adultNum" class="num" id="adultNum" min="0" max="50" step="1" value="1">
-                <div class="add">+</div>
-              </td>
-              <td>
-                <div class="sub">-</div>
-                <input type="number" name="childNum" class="num" id="childNum" min="0" max="50" step="1" value="0">
-                <div class="add">+</div>
-              </td>
-              <td>
-                <div class="sub">-</div>
-                <input type="number" name="infNum" class="num" id="infNum" min="0" max="50" step="1" value="0">
-                <div class="add">+</div>
-              </td>
-            </tr>
-          </table>
+            </div>
+            <div class="bodyTable">
+              <div class="td">
+
+                <div class="typeTicket">
+                  Người lớn / Adult(s)
+                </div>
+
+                <div>
+                  <div class="sub">-</div>
+                  <input type="number" name="adultNum" class="num" id="adultNum" min="0" max="50" step="1" value="1">
+                  <div class="add">+</div>
+                </div>
+
+              </div>
+              <div class="td">
+
+                <div class="typeTicket">
+                  Trẻ em / Child(ren) <br>
+                  <span class="note">2 to under 12 years old</span>
+                </div>
+
+                <div>
+                  <div class="sub">-</div>
+                  <input type="number" name="childNum" class="num" id="childNum" min="0" max="50" step="1" value="0">
+                  <div class="add">+</div>
+                </div>
+
+              </div>
+              <div class="td">
+
+                <div class="typeTicket">
+                  Em bé / Infant(s) <br>
+                  <span class="note">under 2 years old</span>
+                </div>
+
+                <div>
+                  <div class="sub">-</div>
+                  <input type="number" name="infNum" class="num" id="infNum" min="0" max="50" step="1" value="0">
+                  <div class="add">+</div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
 
 
 
