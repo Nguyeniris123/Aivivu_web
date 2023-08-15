@@ -9,7 +9,7 @@
     --font-size-large: 28px;
     --font-size-medium: 16px;
     --font-size-small: 8px;
-  }
+}
 
 .checkedButton {
     color: var(--mainColor);

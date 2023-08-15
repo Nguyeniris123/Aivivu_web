@@ -238,6 +238,91 @@ function animateContainers2() {
   }, 600);
 }
 
+function handleSubmission2() {
+  var fullName = document.getElementById('full-name').value;
+  var birthday = document.getElementById('birthday').value;
+  var email = document.getElementById('email').value;
+  var phone = document.getElementById('phone').value;
+
+  var isRequiredFieldsFilled = fullName && birthday && email && phone;
+
+  if (fullName ==="" ){
+    Swal.fire({
+      text: 'Vui lòng nhập tên.',
+      icon: 'warning',
+      confirmButtonText: 'OK',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    });
+  } else {
+    if (birthday ==="" ){
+      Swal.fire({
+        text: 'Vui lòng nhập ngày sinh.',
+        icon: 'warning',
+        confirmButtonText: 'OK',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      });
+    } else {
+      if (email ==="" ){
+        Swal.fire({
+          text: 'Vui lòng nhập email.',
+          icon: 'warning',
+          confirmButtonText: 'OK',
+          showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+          }
+        });
+      } else {
+        if (phone ==="" ){
+          Swal.fire({
+            text: 'Vui lòng nhập số điện thoại.',
+            icon: 'warning',
+            confirmButtonText: 'OK',
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          });
+        } else {
+          if (isRequiredFieldsFilled) {
+            showSweetAlertWithRedirect();
+          }
+        }
+      }
+    }
+  }
+}
+
+function showSweetAlertWithRedirect() {
+  Swal.fire({
+    title: "Thông báo",
+    text: "Đặt vé thành công !",
+    showCancelButton: true,
+    confirmButtonText: "Về trang chủ",
+    cancelButtonText: "Đặt vé tiếp",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.location.href = "index.html";
+    } else {
+      window.location.href = "order.html";
+    }
+  });
+}
+
 window.onload = function() {
 
   // Gọi hàm handleButtons để xử lý các nút 
@@ -251,4 +336,6 @@ window.onload = function() {
 
   handleLiClick();
 
-  };
+
+
+};

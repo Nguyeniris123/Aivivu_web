@@ -20,8 +20,8 @@ body {
 
 
 .iconAni {
-  transform: scaleX(-1);
-}
+    transform: translate(-1px, -1px) scale(1.15);
+  }
 
 /* --------------------------------------------- */
 
