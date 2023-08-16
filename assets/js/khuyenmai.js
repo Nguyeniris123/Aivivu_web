@@ -6,7 +6,7 @@ function load() {
     <div class="content-section col l-4 m-6 c-12">
         <img src="${p.img}" title="${p.title}">
         <h3>
-            <a href="${p.link}">${p.title}</a>
+            <a href="${p.link}" target="_blank">${p.title}</a>
         </h3>
         <div class="content">
             ${p.content}

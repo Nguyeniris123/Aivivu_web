@@ -15,7 +15,7 @@ function load() {
                 </div>
     
                 <h3>
-                  <a href="${p.link}" title="${p.title}">${p.title}</a>
+                  <a href="${p.link}" target="_blank" title="${p.title}">${p.title}</a>
                 </h3>
     
                 <div>
