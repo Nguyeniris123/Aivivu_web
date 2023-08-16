@@ -285,6 +285,10 @@ html {
     opacity: 0.9;
 }
 
+.fa-brands.fa-facebook-messenger:visited {
+    color: rgb(28, 28, 173);
+}
+
 #chatbox:hover #chatbox-text {
     display: block;
 }
