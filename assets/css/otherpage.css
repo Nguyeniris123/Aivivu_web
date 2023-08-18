@@ -136,6 +136,14 @@ html {
     width: 100%;
 }
 
+.app img:hover {
+    transform: scale(1.1); 
+}
+
+.app .Qr-code:hover {
+    transform: none;
+}
+
 .Qr-code {
     margin-right: 30px;
 }
@@ -275,7 +283,8 @@ html {
 
 #chatbox-text {
     display: none;
-    color: yellow;
+    color: orange;
+    font-weight: bold;
     margin-right: 10px;
     font-size: 30px;
     animation: jump 1s infinite;
