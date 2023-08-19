@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor: rgb(0, 163, 250);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Main {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.main-content h1,h2,h3,h4 {
+    text-align: left;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+h1.entry-title {
+    color: #111;
+    text-align: left;
+    font-family: 'Roboto',sans-serif;
+    font-size: 24px!important;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0 0 12px 20px;
+}
+.Main span {
+    color: var(--mainColor);
+
+}
+
+
+.main-content {
+    display: inline-block;
+    max-width: 68vw;
+    padding-left: 8vw;
+}
+
+figure {
+    display: inline-block;
+    max-width: 1000px;
+    margin: 0 5px;
+}
+
+figure img {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 12px 0 4vh 0 ;
+}
+
+figure .caption-text {
+    text-align: center;
+    color: var(--mainColor);
+    margin: 6px 0 26px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+p,ul {
+    text-align: justify;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.quantity,.sub-title {
+    color: #111;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.related-post {
+    display: inline-block;
+    width: 28vw;
+    padding-right: 8vw;
+    margin-bottom: auto;
+}
+
+.related-post h4 {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid var(--mainColor);
+}
+
+.related-post h4 a {
+    color: #fff;
+    background-color: var(--mainColor);
+    line-height: 2;
+    padding: 8px;
+}
+
+.content {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #fffdfd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* >= Tablet */
+@media (max-width: 739px) {
+    .Main {
+        flex-direction: column;
+    }
+    
+    .main-content {
+        width: 100%;
+        max-width: 92vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    .related-post {
+        width: 80%;
+        margin-left: 8vw;
+        margin-top: 10vw;
+    }
+   
+
+
+    
+}
