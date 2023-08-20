@@ -18,6 +18,10 @@ body {
     line-height: 1.6;
 }
 
+.nav-bar {
+    margin-top: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -52,7 +56,6 @@ h1.entry-title {
 
 }
 
-
 .main-content {
     display: inline-block;
     max-width: 68vw;
@@ -82,12 +85,13 @@ figure .caption-text {
     line-height: 20px;
 }
 
-p,ul {
+.Main p,ul {
     text-align: justify;
 }
 
-ul {
+.Main ul {
     list-style-type: disc;
+    margin-left: 40px;
 }
 
 .quantity,.sub-title {
@@ -127,8 +131,8 @@ ul {
     margin-bottom: 10px;
 }
 
-/* >= Tablet */
-@media (max-width: 739px) {
+/* mobile */
+@media (max-width: 740px) {
     .Main {
         flex-direction: column;
     }
@@ -145,8 +149,8 @@ ul {
         margin-left: 8vw;
         margin-top: 10vw;
     }
-   
 
-
-    
+    .nav-bar {
+        margin-top: 0;
+    }
 }
