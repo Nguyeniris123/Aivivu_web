@@ -32,6 +32,10 @@ h3 {
     h3 {
         display: inline-block;
     }
+
+    .main.col {
+        margin: 0 10px;
+    }
 }
 
 /* Tablet - PC low resolution */

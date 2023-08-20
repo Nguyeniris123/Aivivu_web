@@ -25,7 +25,9 @@ h3 {
 
 /* mobile */
 @media (max-width: 740px) {
-   
+    .target-people {
+        margin: 0 10px;
+    }
 }
 
 /* Tablet - PC low resolution */

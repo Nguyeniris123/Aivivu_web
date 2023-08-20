@@ -115,7 +115,7 @@ h2 {
     background-repeat: repeat;
     background-size: cover;
     width: 100%;
-    min-width: 1028px;
+    /* min-width: 1028px; */
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 16.8vw;

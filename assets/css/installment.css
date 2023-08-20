@@ -25,7 +25,9 @@ ol {
 
 /* mobile */
 @media (max-width: 740px) {
-
+    .installment .col {
+        margin: 0 10px;
+    }
 }
 
 /* Tablet - PC low resolution */

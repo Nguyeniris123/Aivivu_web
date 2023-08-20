@@ -38,6 +38,11 @@ h2 {
     padding: 15px;
 }
 
+.sub-aivivu p {
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
 /* PC medium resolution > */
 @media (min-width: 1024px) {
 
