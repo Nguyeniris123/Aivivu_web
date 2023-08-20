@@ -18,6 +18,10 @@ body {
     line-height: 1.6;
 }
 
+.nav-bar {
+    margin-top: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -127,8 +131,8 @@ figure .caption-text {
     margin-bottom: 10px;
 }
 
-/* >= Tablet */
-@media (max-width: 739px) {
+/* mobile */
+@media (max-width: 740px) {
     .Main {
         flex-direction: column;
     }
@@ -144,5 +148,9 @@ figure .caption-text {
         width: 80%;
         margin-left: 8vw;
         margin-top: 10vw;
+    }
+
+    .nav-bar {
+        margin-top: 0;
     }
 }
