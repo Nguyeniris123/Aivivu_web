@@ -17,10 +17,10 @@ window.onload = function() {
         });
 
 
-        imgBox.addEventListener('click', function() {
-            this.classList.toggle('open');
-            checkImgBoxes(place);
-          });
+        imgBox.addEventListener('touchstart', function() {
+          this.classList.toggle('open');
+          checkImgBoxes(place);
+        });
       });
     
       function checkImgBoxes(place) {
