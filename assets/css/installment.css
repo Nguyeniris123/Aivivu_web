@@ -24,7 +24,7 @@ ol {
 }
 
 /* mobile */
-@media (max-width: 740px) {
+@media (max-width: 739px) {
     .installment .col {
         margin: 0 10px;
     }

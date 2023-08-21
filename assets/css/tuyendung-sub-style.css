@@ -132,7 +132,7 @@ figure .caption-text {
 }
 
 /* mobile */
-@media (max-width: 740px) {
+@media (max-width: 739px) {
     .Main {
         flex-direction: column;
     }

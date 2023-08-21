@@ -59,7 +59,7 @@ h2 {
 }
 
 /* mobile */
-@media (max-width: 740px) {
+@media (max-width: 739px) {
     .send {
         margin-left: 0;
     }

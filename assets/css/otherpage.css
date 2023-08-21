@@ -327,7 +327,7 @@ html {
 }
 
 /* mobile */
-@media (max-width: 740px) {
+@media (max-width: 739px) {
     .row {
         margin-left: 4px;
         margin-right: 4px;

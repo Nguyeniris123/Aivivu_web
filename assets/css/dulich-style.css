@@ -152,7 +152,7 @@ a {
     transition: opacity 0.5s;
  } 
 
- @media (max-width: 740px) {
+ @media (max-width: 739px) {
     .places {
         width: 96vw;
         margin-left: 2vw;

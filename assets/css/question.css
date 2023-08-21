@@ -28,7 +28,7 @@ h3 {
 }
 
 /* mobile */
-@media (max-width: 740px) {
+@media (max-width: 739px) {
     h3 {
         display: inline-block;
     }
