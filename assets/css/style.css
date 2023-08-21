@@ -373,6 +373,16 @@ html {
     padding: 10px 0;
 }
 
+.email {
+    color: #101aef;
+    text-decoration: none;
+}
+
+.email:hover {
+    color: rgb(16, 16, 126);
+    text-decoration: underline;
+}
+
 #footer .socials-list {
     font-size: 24px;
     margin-top: 10px;
