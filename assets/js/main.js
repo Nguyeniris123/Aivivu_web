@@ -43,6 +43,37 @@ function changeBackgroundImageLeft(obj) {
 // Đặt thời gian để thay đổi hình ảnh sau mỗi 2 giây (1000ms = 1s)
 setInterval(changeBackgroundImageRight, 2000);
 
+// check thời gian đi thời gian về slider search 
+    var ngayDiInput = $("#time1");
+    var ngayVeInput = $("#time2");
+
+    ngayDiInput.change(function() {
+        var ngayDi = new Date($(this).val());
+        var ngayVe = new Date(ngayVeInput.val());
+        var today = new Date();
+
+        if (ngayDi < today) {
+            alert("Ngày đi không thể thấp hơn ngày hôm nay!");
+            $(this).val("");
+        } else if (ngayVe < ngayDi) {
+            alert("Ngày về không thể thấp hơn ngày đi!");
+            ngayVeInput.val("");
+        }
+    });
+
+    ngayVeInput.change(function() {
+        var ngayVe = new Date($(this).val());
+        var ngayDi = new Date(ngayDiInput.val());
+        var today = new Date();
+        if (ngayVe < today) {
+            alert("Ngày về không thể thấp hơn ngày hôm nay!");
+            $(this).val("");
+        }
+        if (ngayVe < ngayDi) {
+            alert("Ngày về không thể thấp hơn ngày đi!");
+            $(this).val("");
+        }
+    });
 // Check search info begin
 function validate(ele) {
     if (ele.value === '') {
