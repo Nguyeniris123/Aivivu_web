@@ -153,8 +153,6 @@ a {
  } 
 
  @media (max-width: 740px) {
-
-
     .places {
         width: 96vw;
         margin-left: 2vw;
@@ -187,5 +185,9 @@ a {
 
     .places .imgBox figcaption {
         font-size: 16px;
+    }
+
+    .nav-bar {
+        margin-top: 0;
     }
  }
