@@ -275,6 +275,7 @@ html {
     bottom: 2%;
     right: 2%;
     z-index: 3;
+    cursor: pointer;
 }
 
 #chatbox {
@@ -301,7 +302,7 @@ html {
     opacity: 0.9;
 }
 
-.fa-brands.fa-facebook-messenger:visited {
+.chatbox-a:visited {
     color: rgb(28, 28, 173);
 }
 
@@ -367,6 +368,10 @@ html {
 
     .download {
         margin-top: 60px;
+    }
+
+    #chatbox {
+        font-size: 50px;
     }
 }
 
