@@ -142,6 +142,11 @@ function handleSubmission() {
 
   var isRequiredFieldsFilled = departure && destination && departing && returning;
 
+    // Lấy giá trị của các input
+    var adultNum = parseInt(document.getElementById('adultNum').value);
+    var childNum = parseInt(document.getElementById('childNum').value);
+    var infNum = parseInt(document.getElementById('infNum').value);
+
   // Hiển thị thông báo nếu không có radio nào được chọn hoặc các mục yêu cầu chưa được điền đúng
   if (!isRadioSelected) {
     Swal.fire({
@@ -208,9 +213,24 @@ function handleSubmission() {
               }
             });
           } else {
-            if (isRequiredFieldsFilled) {
+             // Kiểm tra nếu cả ba trường số lượng đều là 0
+            if (adultNum === 0 && childNum === 0 && infNum === 0)  {
+              Swal.fire({
+                text: 'Vui lòng chọn số lượng người đi!',
+                icon: 'warning',
+                confirmButtonText: 'OK',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              });
+            } else {
+              if (isRequiredFieldsFilled) {
               // Gọi hàm animateContainers1()
               animateContainers1();
+              }
             }
           }
         }
