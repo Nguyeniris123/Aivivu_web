@@ -45,6 +45,7 @@ body {
     background-size: cover !important;
     background-position: bottom !important;
     background-repeat: no-repeat !important;
+    background-attachment: fixed;
     color: #fff;
 
     height: 100vh !important;
