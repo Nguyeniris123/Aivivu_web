@@ -139,7 +139,7 @@ a {
     height: 450px;
     border-radius:  12px;
     padding: 20px;
-    overflow: scroll;
+    overflow: auto;
     position: absolute;
 
     top: 15vh;
